@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53#"
+     xml:base="http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53">
+        <dc:contributor>Dr. Maria Poveda</dc:contributor>
+        <dc:contributor>Prof. Dr. Ajith Abraham</dc:contributor>
+        <dc:creater>Dr. Sanju Tiwari</dc:creater>
+        <dc:description>It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries.</dc:description>
+        <dc:title>Smart Health Care Ontology for Health Care</dc:title>
+        <terms:created>04/12/2018</terms:created>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creater -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#cared_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#cared_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#cares_for"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#cares_for -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#cares_for">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#has -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#has">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#looks_for -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#looks_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#operates -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#operates">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#operates_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#operates_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#operates_by">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#transfer_data_to -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#transfer_data_to">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#treated_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#treated_by">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:isDefinedBy>Health Care Ontology</rdfs:isDefinedBy>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Actor -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Actor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:comment>Actor can perform a concrete intervention or problem assessment such as Doctor, Manager, Nurse, Patient, Surgeon etc,</rdfs:comment>
+        <rdfs:isDefinedBy>Actor is  subclass of health care.</rdfs:isDefinedBy>
+        <rdfs:label>Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Actuators -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Actuators">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Administrator -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Administrator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>Administrators are responsible for the day-to-day operation of a hospital.</rdfs:comment>
+        <rdfs:label>Administrator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#BPSensores -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#BPSensores">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Body_Temp -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Body_Temp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Cardiologist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Cardiologist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#ChestPain -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#ChestPain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#ClinicalPharmacist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Pharmacist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#CommunityPharmacist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#CommunityPharmacist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Pharmacist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Consultation -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Consultation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Cough -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Cough">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Diagnosis -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Diagnosis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Doctor -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Doctor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>Doctor examine, diagnose and treat patients who&apos;ve been referred to the hospital by health professionals</rdfs:comment>
+        <rdfs:label>Doctor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#DoctorsPrescription -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#DoctorsPrescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Event -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Event">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:isDefinedBy>Event is a subclass of Health care.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Fever -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Fever">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#GeneralPractice -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#GeneralPractice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Headache -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Headache">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#HealthCare -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthCare">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A class for health care objects.</rdfs:comment>
+        <rdfs:label>HealthCare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#HealthDevices -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#HealthProvider -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#HeartBeat -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HeartBeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#HeartbeatSensors -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HeartbeatSensors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Hospital -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Hospital">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Insurance -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Insurance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#InsurancePolicy -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#InsurancePolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Manager -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Manager">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#MedicalRecord -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#MedicalRecord">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Medical_Oncologist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Medical_Oncologist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Oncologist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Nurse -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Nurse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Oncologist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Oncologist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Organization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:isDefinedBy>Organization is a subclass of health care.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Patient -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Patient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Pharmacist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Pharmacist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Physician -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Physician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Pulmonologist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Pulmonologist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#RFID -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#RFID">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Radiation_Oncologist -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Radiation_Oncologist">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Oncologist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Record -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Record">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <dc:creater></dc:creater>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Referral -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Referral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Sensores -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Sensores">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Surgeon -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Surgeon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Surgery -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Surgery">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Sympotoms -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Sympotoms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#TemperatureSensors -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#TemperatureSensors">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SmartHealthCare#Treatment -->
+
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Treatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
