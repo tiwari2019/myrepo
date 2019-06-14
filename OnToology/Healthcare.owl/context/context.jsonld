@@ -1,0 +1,213 @@
+{
+  "@context" : {
+    "Pharmacist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist"
+    },
+    "Diagnosis" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Diagnosis"
+    },
+    "Oncologist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Oncologist"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "InsurancePolicy" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#InsurancePolicy"
+    },
+    "HeartBeat" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#HeartBeat"
+    },
+    "Pulmonologist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Pulmonologist"
+    },
+    "operates" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#operates",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "HealthDevices" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+    },
+    "TemperatureSensors" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#TemperatureSensors"
+    },
+    "Administrator" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Administrator"
+    },
+    "Medical_Oncologist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Medical_Oncologist"
+    },
+    "Phychiatric_Pharmacist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist"
+    },
+    "Doctor" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+    },
+    "Cardiologist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Cardiologist"
+    },
+    "looks_for" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
+      "@type" : "@id"
+    },
+    "creater" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creater"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CommunityPharmacist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#CommunityPharmacist"
+    },
+    "cares_for" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#cares_for",
+      "@type" : "@id"
+    },
+    "transfer_data_to" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#transfer_data_to",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+    },
+    "Sympotoms" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+    },
+    "Patient" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+    },
+    "Treatment" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Treatment"
+    },
+    "Actor" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+    },
+    "Physician" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
+    },
+    "BPSensores" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores"
+    },
+    "Referral" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Referral"
+    },
+    "HealthProvider" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider"
+    },
+    "RFID" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#RFID"
+    },
+    "HealthCare" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+    },
+    "Sensores" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+    },
+    "Insurance" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Insurance"
+    },
+    "Surgeon" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon"
+    },
+    "Fever" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Fever"
+    },
+    "Consultation" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Consultation"
+    },
+    "Oncology_Pharmacist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist"
+    },
+    "ClinicalPharmacist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"
+    },
+    "GeneralPractice" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#GeneralPractice"
+    },
+    "Cough" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Cough"
+    },
+    "Radiation_Oncologist" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Radiation_Oncologist"
+    },
+    "treated_by" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#treated_by",
+      "@type" : "@id"
+    },
+    "cared_by" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#cared_by",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "DoctorsPrescription" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#DoctorsPrescription"
+    },
+    "Record" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Record"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "Hospital" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Hospital"
+    },
+    "Surgery" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Surgery"
+    },
+    "operates_by" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#operates_by",
+      "@type" : "@id"
+    },
+    "Body_Temp" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Body_Temp"
+    },
+    "has" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#has",
+      "@type" : "@id"
+    },
+    "MedicalRecord" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#MedicalRecord"
+    },
+    "Manager" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Manager"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "Headache" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Headache"
+    },
+    "Nurse" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
+    },
+    "HeartbeatSensors" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#HeartbeatSensors"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Actuators" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#Actuators"
+    },
+    "ChestPain" : {
+      "@id" : "https://w3id.org/def/SmartHealthCare#ChestPain"
+    }
+  }
+}

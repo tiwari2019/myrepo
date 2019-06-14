@@ -1,0 +1,451 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Dr. Maria Poveda"
+  }, {
+    "@value" : "Prof. Dr. Ajith Abraham"
+  } ],
+  "http://purl.org/dc/elements/1.1/creater" : [ {
+    "@value" : "Dr. Sanju Tiwari"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Smart Health Care Ontology for Health Care"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "04/12/2018"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Health Care Ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actor can perform a concrete intervention or problem assessment such as Doctor, Manager, Nurse, Patient, Surgeon etc,"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Actor is  subclass of health care."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Actuators",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Administrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Administrators are responsible for the day-to-day operation of a hospital."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Administrator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Body_Temp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Cardiologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#ChestPain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#ClinicalPharmacist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#CommunityPharmacist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Consultation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Cough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Diagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Doctor examine, diagnose and treat patients who've been referred to the hospital by health professionals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Doctor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#DoctorsPrescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Record"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Event is a subclass of Health care."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Fever",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#GeneralPractice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Headache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class for health care objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HealthCare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#HeartBeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#HeartbeatSensors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Hospital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Insurance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#InsurancePolicy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Record"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Manager",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#MedicalRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Record"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Medical_Oncologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Oncologist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Nurse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Oncologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Organization is a subclass of health care."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Physician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Pulmonologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#RFID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Radiation_Oncologist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Oncologist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/creater" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Referral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Sensores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Surgery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#TemperatureSensors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#Treatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#cared_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#cares_for"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#cares_for",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#has",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#operates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#operates_by"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#operates_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#transfer_data_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+  }, {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
+  }, {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/SmartHealthCare#treated_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+  } ]
+} ]

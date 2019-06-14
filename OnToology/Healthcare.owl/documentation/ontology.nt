@@ -1,0 +1,304 @@
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/contributor> "Dr. Maria Poveda" .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/contributor> "Prof. Dr. Ajith Abraham" .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/creater> "Dr. Sanju Tiwari" .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/description> "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries." .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/title> "Smart Health Care Ontology for Health Care" .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/terms/created> "04/12/2018" .
+<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creater
+<http://purl.org/dc/elements/1.1/creater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/SmartHealthCare#cared_by
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#cares_for> .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Nurse> .
+# 
+# https://w3id.org/def/SmartHealthCare#cares_for
+<https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Nurse> .
+<https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+# 
+# https://w3id.org/def/SmartHealthCare#has
+<https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#looks_for
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#treated_by> .
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Doctor> .
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+# 
+# https://w3id.org/def/SmartHealthCare#operates
+<https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#operates_by> .
+<https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Surgeon> .
+<https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+# 
+# https://w3id.org/def/SmartHealthCare#operates_by
+<https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Surgeon> .
+# 
+# https://w3id.org/def/SmartHealthCare#transfer_data_to
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Doctor> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Nurse> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+# 
+# https://w3id.org/def/SmartHealthCare#treated_by
+<https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Doctor> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Health Care Ontology" .
+# 
+# https://w3id.org/def/SmartHealthCare#Actor
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor can perform a concrete intervention or problem assessment such as Doctor, Manager, Nurse, Patient, Surgeon etc," .
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Actor is  subclass of health care." .
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# https://w3id.org/def/SmartHealthCare#Actuators
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+# 
+# https://w3id.org/def/SmartHealthCare#Administrator
+<https://w3id.org/def/SmartHealthCare#Administrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Administrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Administrator> <http://www.w3.org/2000/01/rdf-schema#comment> "Administrators are responsible for the day-to-day operation of a hospital." .
+<https://w3id.org/def/SmartHealthCare#Administrator> <http://www.w3.org/2000/01/rdf-schema#label> "Administrator" .
+# 
+# https://w3id.org/def/SmartHealthCare#BPSensores
+<https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+# 
+# https://w3id.org/def/SmartHealthCare#Body_Temp
+<https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#Cardiologist
+<https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+# 
+# https://w3id.org/def/SmartHealthCare#ChestPain
+<https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#ClinicalPharmacist
+<https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Pharmacist> .
+# 
+# https://w3id.org/def/SmartHealthCare#CommunityPharmacist
+<https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Pharmacist> .
+# 
+# https://w3id.org/def/SmartHealthCare#Consultation
+<https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# https://w3id.org/def/SmartHealthCare#Cough
+<https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#Diagnosis
+<https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# https://w3id.org/def/SmartHealthCare#Doctor
+<https://w3id.org/def/SmartHealthCare#Doctor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Doctor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Doctor> <http://www.w3.org/2000/01/rdf-schema#comment> "Doctor examine, diagnose and treat patients who've been referred to the hospital by health professionals" .
+<https://w3id.org/def/SmartHealthCare#Doctor> <http://www.w3.org/2000/01/rdf-schema#label> "Doctor" .
+# 
+# https://w3id.org/def/SmartHealthCare#DoctorsPrescription
+<https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+# 
+# https://w3id.org/def/SmartHealthCare#Event
+<https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Event is a subclass of Health care." .
+# 
+# https://w3id.org/def/SmartHealthCare#Fever
+<https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#GeneralPractice
+<https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+# 
+# https://w3id.org/def/SmartHealthCare#Headache
+<https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#HealthCare
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#comment> "A class for health care objects." .
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#label> "HealthCare" .
+# 
+# https://w3id.org/def/SmartHealthCare#HealthDevices
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/SmartHealthCare#HealthProvider
+<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/SmartHealthCare#HeartBeat
+<https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+# 
+# https://w3id.org/def/SmartHealthCare#HeartbeatSensors
+<https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+# 
+# https://w3id.org/def/SmartHealthCare#Hospital
+<https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+# 
+# https://w3id.org/def/SmartHealthCare#Insurance
+<https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+# 
+# https://w3id.org/def/SmartHealthCare#InsurancePolicy
+<https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+# 
+# https://w3id.org/def/SmartHealthCare#Manager
+<https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+# 
+# https://w3id.org/def/SmartHealthCare#MedicalRecord
+<https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+# 
+# https://w3id.org/def/SmartHealthCare#Medical_Oncologist
+<https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Oncologist> .
+# 
+# https://w3id.org/def/SmartHealthCare#Nurse
+<https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+# 
+# https://w3id.org/def/SmartHealthCare#Oncologist
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+# 
+# https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist
+<https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> .
+# 
+# https://w3id.org/def/SmartHealthCare#Organization
+<https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Organization is a subclass of health care." .
+# 
+# https://w3id.org/def/SmartHealthCare#Patient
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+# 
+# https://w3id.org/def/SmartHealthCare#Pharmacist
+<https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthProvider> .
+# 
+# https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist
+<https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> .
+# 
+# https://w3id.org/def/SmartHealthCare#Physician
+<https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthProvider> .
+# 
+# https://w3id.org/def/SmartHealthCare#Pulmonologist
+<https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+# 
+# https://w3id.org/def/SmartHealthCare#RFID
+<https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+# 
+# https://w3id.org/def/SmartHealthCare#Radiation_Oncologist
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Oncologist> .
+# 
+# https://w3id.org/def/SmartHealthCare#Record
+<https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Record> <http://purl.org/dc/elements/1.1/creater> "" .
+# 
+# https://w3id.org/def/SmartHealthCare#Referral
+<https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# https://w3id.org/def/SmartHealthCare#Sensores
+<https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+# 
+# https://w3id.org/def/SmartHealthCare#Surgeon
+<https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+# 
+# https://w3id.org/def/SmartHealthCare#Surgery
+<https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# https://w3id.org/def/SmartHealthCare#Sympotoms
+<https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# https://w3id.org/def/SmartHealthCare#TemperatureSensors
+<https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+# 
+# https://w3id.org/def/SmartHealthCare#Treatment
+<https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
