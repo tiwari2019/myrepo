@@ -39,13 +39,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creater -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
