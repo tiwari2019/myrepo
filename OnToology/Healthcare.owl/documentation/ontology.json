@@ -17,30 +17,6 @@
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Dr. Maria Poveda"
-  }, {
-    "@value" : "Prof. Dr. Ajith Abraham"
-  } ],
-  "http://purl.org/dc/elements/1.1/creater" : [ {
-    "@value" : "Dr. Sanju Tiwari"
-  } ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries."
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Smart Health Care Ontology for Health Care"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@value" : "04/12/2018"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1.1"
-  } ]
-}, {
   "@id" : "http://www.w3.org/2002/07/owl#Thing",
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "Health Care Ontology"
@@ -766,5 +742,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Dr. Maria Poveda"
+  }, {
+    "@value" : "Prof. Dr. Ajith Abraham"
+  } ],
+  "http://purl.org/dc/elements/1.1/creater" : [ {
+    "@value" : "Dr. Sanju Tiwari"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Smart Health Care Ontology for Health Care"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "04/12/2018"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.1"
   } ]
 } ]

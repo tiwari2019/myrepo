@@ -1,11 +1,11 @@
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/contributor> "Dr. Maria Poveda" .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/contributor> "Prof. Dr. Ajith Abraham" .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/creater> "Dr. Sanju Tiwari" .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/description> "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries." .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/elements/1.1/title> "Smart Health Care Ontology for Health Care" .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://purl.org/dc/terms/created> "04/12/2018" .
-<http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/def/sanjutiwari> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/contributor> "Dr. Maria Poveda" .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/contributor> "Prof. Dr. Ajith Abraham" .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/creater> "Dr. Sanju Tiwari" .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/description> "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries." .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/title> "Smart Health Care Ontology for Health Care" .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/terms/created> "04/12/2018" .
+<https://w3id.org/def/sanjutiwari> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
