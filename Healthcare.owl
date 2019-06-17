@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2018/9/untitled-ontology-53">
+    <owl:Ontology rdf:about="https://w3id.org/def/sanjutiwari">
         <dc:contributor>Dr. Maria Poveda</dc:contributor>
         <dc:contributor>Prof. Dr. Ajith Abraham</dc:contributor>
         <dc:creater>Dr. Sanju Tiwari</dc:creater>
