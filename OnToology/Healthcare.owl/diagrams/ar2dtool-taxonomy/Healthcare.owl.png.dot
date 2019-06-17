@@ -15,6 +15,7 @@ node [shape = rectangle, color="black"]; "https://w3id.org/def/SmartHealthCare#H
 	"https://w3id.org/def/SmartHealthCare#Surgeon" -> "https://w3id.org/def/SmartHealthCare#Actor" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/def/SmartHealthCare#Cardiologist" -> "https://w3id.org/def/SmartHealthCare#Physician" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/def/SmartHealthCare#Doctor" -> "https://w3id.org/def/SmartHealthCare#Actor" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/SmartHealthCare#HealthProvider" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/def/SmartHealthCare#HealthCare" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/def/SmartHealthCare#Treatment" -> "https://w3id.org/def/SmartHealthCare#Event" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/def/SmartHealthCare#CommunityPharmacist" -> "https://w3id.org/def/SmartHealthCare#Pharmacist" [ label = "rdfs:subClassOf" ];

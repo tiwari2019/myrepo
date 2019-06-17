@@ -209,6 +209,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Actuators">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+        <rdfs:comment>An actuator is a device that converts energy into motion or applies force. The mechanical device takes energy in the form of hydraulics, pneumatics, or from a motor, and converts it into motion.</rdfs:comment>
+        <rdfs:isDefinedBy>Actuators is a sub-class of healthDevices</rdfs:isDefinedBy>
+        <rdfs:label>Actuators</rdfs:label>
     </owl:Class>
     
 
@@ -229,6 +232,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#BPSensores">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:comment>Sensing and Storing the Blood Pressure Measure by Patients through A Platform and Mobile Devices Sensors</rdfs:comment>
+        <rdfs:isDefinedBy>BPSensores is a sub-class of Sensores</rdfs:isDefinedBy>
+        <rdfs:label>BPSensores</rdfs:label>
     </owl:Class>
     
 
@@ -238,6 +244,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Body_Temp">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Temperature of the body; normally 98.6 F or 37 C in humans; usually measured to obtain a quick evaluation of a person&apos;s health</rdfs:comment>
+        <rdfs:isDefinedBy>Body_Temp is a sub-class of Symptoms.</rdfs:isDefinedBy>
+        <rdfs:label>Body_Temp</rdfs:label>
     </owl:Class>
     
 
@@ -247,6 +256,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Cardiologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+        <rdfs:comment>A cardiologist is a medical doctor who is trained and certified to help patients who have problems with their heart, blood vessels or other things connected to the cardiovascular system.</rdfs:comment>
+        <rdfs:isDefinedBy>Cardiologist is a sub-class of Physician</rdfs:isDefinedBy>
+        <rdfs:label>Cardiologist</rdfs:label>
     </owl:Class>
     
 
@@ -256,6 +268,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#ChestPain">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Pain in the chest that can be a result of many things, including angina, heart attack (coronary occlusion), and other important diseases. Chest pain is a warning to seek medical attention, so one should try not to ignore chest pain and &apos;work through it.</rdfs:comment>
+        <rdfs:isDefinedBy>ChestPain is a sub-class of Symptoms.</rdfs:isDefinedBy>
+        <rdfs:label>ChestPain</rdfs:label>
     </owl:Class>
     
 
@@ -265,6 +280,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Pharmacist"/>
+        <rdfs:comment>Clinical pharmacists work directly with physicians, other health professionals, and patients to ensure that the medications prescribed for patients contribute to the best possible health outcomes.</rdfs:comment>
+        <rdfs:isDefinedBy>ClinicalPharmacist is a sub-class of Pharmacist</rdfs:isDefinedBy>
+        <rdfs:label>ClinicalPharmacist</rdfs:label>
     </owl:Class>
     
 
@@ -274,6 +292,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#CommunityPharmacist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Pharmacist"/>
+        <rdfs:comment>Community pharmacists are the health professionals most accessible to the public. They supply medicines in accordance with a prescription or, when legally permitted, sell them without a prescription.</rdfs:comment>
+        <rdfs:isDefinedBy>CommunityPharmacist is a sub-cñass of Pharmacist.</rdfs:isDefinedBy>
+        <rdfs:label>CommunityPharmacist</rdfs:label>
     </owl:Class>
     
 
@@ -283,6 +304,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Consultation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>Consultation is the act of seeking assistance from another physician(s) or health care professional(s) for diagnostic studies, therapeutic interventions, or other services that may benefit the patient.</rdfs:comment>
+        <rdfs:isDefinedBy>Consultation is a sub-class of Event.</rdfs:isDefinedBy>
+        <rdfs:label>Consultation</rdfs:label>
     </owl:Class>
     
 
@@ -292,6 +316,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Cough">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>A rapid expulsion of air from the lungs, typically in order to clear the lung airways of fluids, mucus, or other material. Also known as tussis</rdfs:comment>
+        <rdfs:isDefinedBy>Cough is a sub-class of Sympoms.</rdfs:isDefinedBy>
+        <rdfs:label>Cough</rdfs:label>
     </owl:Class>
     
 
@@ -301,6 +328,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Diagnosis">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>Medical diagnosis is the process of determining which disease or condition explains a person&apos;s symptoms and signs.</rdfs:comment>
+        <rdfs:isDefinedBy>Diagnosis is sub-class of Event.</rdfs:isDefinedBy>
+        <rdfs:label>Diagnosis</rdfs:label>
     </owl:Class>
     
 
@@ -330,7 +360,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Event">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:comment>Event is a consequence of  care that results several kind of physical states.</rdfs:comment>
         <rdfs:isDefinedBy>Event is a subclass of Health care.</rdfs:isDefinedBy>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -340,6 +372,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Fever">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Although a fever technically is any body temperature above the normal of 98.6 F (37 C), in practice a person is usually not considered to have a significant fever until the temperature is above 100.4 F (38 C)</rdfs:comment>
+        <rdfs:isDefinedBy>Fever is a sub-class of Symptoms.</rdfs:isDefinedBy>
+        <rdfs:label>Fever</rdfs:label>
     </owl:Class>
     
 
@@ -349,6 +384,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#GeneralPractice">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+        <rdfs:comment>General practice (GP) General practitioners (GPs) treat all common medical conditions and refer patients to hospitals and other medical services for urgent and specialist treatment.</rdfs:comment>
+        <rdfs:isDefinedBy>Organization is a sub-class of HealthCare</rdfs:isDefinedBy>
+        <rdfs:label>GeneralPractice</rdfs:label>
     </owl:Class>
     
 
@@ -358,6 +396,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Headache">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Headache is pain in any region of the head. Headaches may occur on one or both sides of the head, be isolated to a certain location, radiate across the head from one point, or have a viselike quality.</rdfs:comment>
+        <rdfs:isDefinedBy>Headache is a sub-class of symptoms.</rdfs:isDefinedBy>
+        <rdfs:label>Headache</rdfs:label>
     </owl:Class>
     
 
@@ -376,14 +417,22 @@
     <!-- https://w3id.org/def/SmartHealthCare#HealthDevices -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthDevices">
+        <rdfs:comment>A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life.</rdfs:comment>
+        <rdfs:isDefinedBy>HealthDevices is a sub-class</rdfs:isDefinedBy>
+        <rdfs:label>HealthDevices</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/def/SmartHealthCare#HealthProvider -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthProvider">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>HealthProvider</rdfs:comment>
+        <rdfs:comment>Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -392,6 +441,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HeartBeat">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm). The heart rate can vary according to the body&apos;s physical needs, including the need to absorb oxygen and excrete carbon dioxide. ...</rdfs:comment>
+        <rdfs:isDefinedBy>HeartBeat is a sub-class of Symptoms.</rdfs:isDefinedBy>
+        <rdfs:label>HeartBeat</rdfs:label>
     </owl:Class>
     
 
@@ -401,6 +453,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HeartbeatSensors">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:comment>A heart rate monitor (HRM) is a personal monitoring device that allows one to measure/display ... Medical heart rate monitoring used in hospitals is usually wired and usually multiple sensors are used.</rdfs:comment>
+        <rdfs:isDefinedBy>HeartbeatSensors is a sub-class of Sensores.</rdfs:isDefinedBy>
+        <rdfs:label>HeartbeatSensors</rdfs:label>
     </owl:Class>
     
 
@@ -410,6 +465,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Hospital">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+        <rdfs:comment>A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment.</rdfs:comment>
+        <rdfs:isDefinedBy>Hospital is a sub-class of HealthCare</rdfs:isDefinedBy>
+        <rdfs:label>Hospital</rdfs:label>
     </owl:Class>
     
 
@@ -419,6 +477,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Insurance">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+        <rdfs:comment>Health insurance is a type of insurance coverage that pays for medical and surgical expenses incurred by the insured.</rdfs:comment>
+        <rdfs:isDefinedBy>Insurance is a sub-class of Organization</rdfs:isDefinedBy>
+        <rdfs:label>Insurance</rdfs:label>
     </owl:Class>
     
 
@@ -455,6 +516,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Medical_Oncologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Oncologist"/>
+        <rdfs:comment>A medical oncologist often is the main health care provider for someone who has cancer.</rdfs:comment>
+        <rdfs:isDefinedBy>Medical_Oncologist is a sub-class of Oncologist</rdfs:isDefinedBy>
+        <rdfs:label>Medical_Oncologist</rdfs:label>
     </owl:Class>
     
 
@@ -473,6 +537,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Oncologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+        <rdfs:comment>A doctor who has special training in diagnosing and treating cancer in adults using chemotherapy, hormonal therapy, biological therapy, and targeted therapy.</rdfs:comment>
+        <rdfs:isDefinedBy>Oncologist is a sub-class of Physician.</rdfs:isDefinedBy>
+        <rdfs:label>Oncologist</rdfs:label>
     </owl:Class>
     
 
@@ -482,6 +549,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"/>
+        <rdfs:comment>Oncology pharmacists ensure safety in compounding, preparing, and dispensing chemotherapy. ... Because of their expert knowledge of medications, pharmacists play an important role in educating patients, caregivers, and other health care professionals.</rdfs:comment>
+        <rdfs:isDefinedBy>Oncology_Pharamacist is a sub-class of ClinicalPharmacist</rdfs:isDefinedBy>
+        <rdfs:label>Oncology_Pharmacist</rdfs:label>
     </owl:Class>
     
 
@@ -491,7 +561,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Organization">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:comment>A health system, also sometimes referred to as health care system or healthcare organization, is the organization of people, institutions, and resources that deliver health care services to meet the health needs of target populations.</rdfs:comment>
         <rdfs:isDefinedBy>Organization is a subclass of health care.</rdfs:isDefinedBy>
+        <rdfs:label>Organization</rdfs:label>
     </owl:Class>
     
 
@@ -510,6 +582,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Pharmacist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+        <rdfs:comment>The pharmacist verifies the legality, safety and appropriateness of the prescription order, checks the patient medication record before dispensing the prescription, ensures that the quantities of medication are dispensed accurately, and decides whether the medication should be handed to the patient, with appropriate counselling.</rdfs:comment>
+        <rdfs:isDefinedBy>Pharmacist is a sub-class of HealthProvider.</rdfs:isDefinedBy>
+        <rdfs:label>Pharmacist</rdfs:label>
     </owl:Class>
     
 
@@ -519,6 +594,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#ClinicalPharmacist"/>
+        <rdfs:comment>Psychiatric pharmacist are the specialist of clinical pharmacy for the treatment of people with psychiatric illnesses through the use of psychotropic medications.</rdfs:comment>
+        <rdfs:isDefinedBy>Phychiatric_Pharmacist is a sub-class of Pharmacist</rdfs:isDefinedBy>
+        <rdfs:label>Phychiatric_Pharmacist</rdfs:label>
     </owl:Class>
     
 
@@ -528,6 +606,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Physician">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
+        <rdfs:comment>A physician, medical practitioner, medical doctor, or simply doctor, is a professional who practises medicine, which is concerned with promoting, maintaining, or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments.</rdfs:comment>
+        <rdfs:isDefinedBy>Physician is  a sub-class of HealthProvider.</rdfs:isDefinedBy>
+        <rdfs:label>Physician</rdfs:label>
     </owl:Class>
     
 
@@ -537,6 +618,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Pulmonologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+        <rdfs:comment>Pulmonologists treat breathing disorders, and may also specialize in some treatment of sleep disorders, severe allergies, and other lung conditions and diseases.</rdfs:comment>
+        <rdfs:isDefinedBy>Pulmonologist is a sub-class of Physician</rdfs:isDefinedBy>
+        <rdfs:label>Pulmonologist</rdfs:label>
     </owl:Class>
     
 
@@ -546,6 +630,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#RFID">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+        <rdfs:comment>RFID is present in many forms – from tracking of surgical tools to tracking patients and staff.</rdfs:comment>
+        <rdfs:isDefinedBy>RFID is a sub-class of HealthDevices.</rdfs:isDefinedBy>
+        <rdfs:label>RFID</rdfs:label>
     </owl:Class>
     
 
@@ -555,6 +642,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Radiation_Oncologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Oncologist"/>
+        <rdfs:comment>Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families.</rdfs:comment>
+        <rdfs:label>Radiation_Oncologist</rdfs:label>
+        <rdfs:label>Radiation_Oncologist is a sub-class of Oncologist.</rdfs:label>
     </owl:Class>
     
 
@@ -564,7 +654,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Record">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
-        <dc:creater></dc:creater>
+        <rdfs:comment>A record of a patient&apos;s medical information (as medical history, care or treatments received, test results, diagnoses, and medications taken)</rdfs:comment>
+        <rdfs:isDefinedBy>Record is a sub-class of HealthCare.</rdfs:isDefinedBy>
+        <rdfs:label>Record</rdfs:label>
     </owl:Class>
     
 
@@ -574,6 +666,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Referral">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>A written order from your primary care doctor for you to see a specialist or get certain medical services.</rdfs:comment>
+        <rdfs:isDefinedBy>Referral is a sub-class of Event.</rdfs:isDefinedBy>
+        <rdfs:label>Referral</rdfs:label>
     </owl:Class>
     
 
@@ -583,6 +678,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Sensores">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+        <rdfs:comment>Sensors are devices that detect physical, chemical, and biological signals and provide a way for those signals to be measured and recorded.</rdfs:comment>
+        <rdfs:isDefinedBy>Sensores is a sub-class of HealthDevices</rdfs:isDefinedBy>
+        <rdfs:label>Sensores</rdfs:label>
     </owl:Class>
     
 
@@ -601,6 +699,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Surgery">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>The branch of medicine that employs operations in the treatment of disease or injury. Surgery can involve cutting, abrading, suturing, or otherwise physically changing body tissues and organs.</rdfs:comment>
+        <rdfs:isDefinedBy>Surgery is a sub-class of Event</rdfs:isDefinedBy>
+        <rdfs:label>Surgery</rdfs:label>
     </owl:Class>
     
 
@@ -610,6 +711,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Sympotoms">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>A symptom is a departure from normal function or feeling which is apparent to a patient, reflecting the presence of an unusual state, or of a disease. A symptom can be subjective or objective.</rdfs:comment>
+        <rdfs:isDefinedBy>Symptoms is a sub-class of Event.</rdfs:isDefinedBy>
+        <rdfs:label>Symptoms</rdfs:label>
     </owl:Class>
     
 
@@ -619,6 +723,8 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#TemperatureSensors">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:comment>One used to determine the temperature of the patient in clinical situations. a clinical thermometer using a sensor based on thermistors, solid-state electronic devices whose electrical characteristics change with temperature.</rdfs:comment>
+        <rdfs:label>Temperature Sensors</rdfs:label>
     </owl:Class>
     
 
@@ -628,6 +734,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Treatment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Event"/>
+        <rdfs:comment>Medical treatment means the management and care of a patient to combat disease or disorder.</rdfs:comment>
+        <rdfs:isDefinedBy>Treatment is a sub-class of Event.</rdfs:isDefinedBy>
+        <rdfs:label>Treatment</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
