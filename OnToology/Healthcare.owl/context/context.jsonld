@@ -59,9 +59,6 @@
       "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
       "@type" : "@id"
     },
-    "creater" : {
-      "@id" : "http://purl.org/dc/elements/1.1/creater"
-    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },

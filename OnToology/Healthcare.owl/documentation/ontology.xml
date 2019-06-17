@@ -39,13 +39,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creater -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
@@ -745,6 +738,21 @@
         <rdfs:isDefinedBy>Treatment is a sub-class of Event.</rdfs:isDefinedBy>
         <rdfs:label>Treatment</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <dc:creator>Dr. Sanju Tiwari</dc:creator>
+    </rdf:Description>
 </rdf:RDF>
 
 
