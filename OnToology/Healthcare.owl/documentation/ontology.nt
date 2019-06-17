@@ -109,6 +109,9 @@
 # https://w3id.org/def/SmartHealthCare#Actuators
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator is a device that converts energy into motion or applies force. The mechanical device takes energy in the form of hydraulics, pneumatics, or from a motor, and converts it into motion." .
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Actuators is a sub-class of healthDevices" .
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#label> "Actuators" .
 # 
 # https://w3id.org/def/SmartHealthCare#Administrator
 <https://w3id.org/def/SmartHealthCare#Administrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -119,38 +122,65 @@
 # https://w3id.org/def/SmartHealthCare#BPSensores
 <https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+<https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing and Storing the Blood Pressure Measure by Patients through A Platform and Mobile Devices Sensors" .
+<https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "BPSensores is a sub-class of Sensores" .
+<https://w3id.org/def/SmartHealthCare#BPSensores> <http://www.w3.org/2000/01/rdf-schema#label> "BPSensores" .
 # 
 # https://w3id.org/def/SmartHealthCare#Body_Temp
 <https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature of the body; normally 98.6 F or 37 C in humans; usually measured to obtain a quick evaluation of a person's health" .
+<https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Body_Temp is a sub-class of Symptoms." .
+<https://w3id.org/def/SmartHealthCare#Body_Temp> <http://www.w3.org/2000/01/rdf-schema#label> "Body_Temp" .
 # 
 # https://w3id.org/def/SmartHealthCare#Cardiologist
 <https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+<https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/2000/01/rdf-schema#comment> "A cardiologist is a medical doctor who is trained and certified to help patients who have problems with their heart, blood vessels or other things connected to the cardiovascular system." .
+<https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Cardiologist is a sub-class of Physician" .
+<https://w3id.org/def/SmartHealthCare#Cardiologist> <http://www.w3.org/2000/01/rdf-schema#label> "Cardiologist" .
 # 
 # https://w3id.org/def/SmartHealthCare#ChestPain
 <https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/2000/01/rdf-schema#comment> "Pain in the chest that can be a result of many things, including angina, heart attack (coronary occlusion), and other important diseases. Chest pain is a warning to seek medical attention, so one should try not to ignore chest pain and 'work through it." .
+<https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "ChestPain is a sub-class of Symptoms." .
+<https://w3id.org/def/SmartHealthCare#ChestPain> <http://www.w3.org/2000/01/rdf-schema#label> "ChestPain" .
 # 
 # https://w3id.org/def/SmartHealthCare#ClinicalPharmacist
 <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Pharmacist> .
+<https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/2000/01/rdf-schema#comment> "Clinical pharmacists work directly with physicians, other health professionals, and patients to ensure that the medications prescribed for patients contribute to the best possible health outcomes." .
+<https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "ClinicalPharmacist is a sub-class of Pharmacist" .
+<https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> <http://www.w3.org/2000/01/rdf-schema#label> "ClinicalPharmacist" .
 # 
 # https://w3id.org/def/SmartHealthCare#CommunityPharmacist
 <https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Pharmacist> .
+<https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/2000/01/rdf-schema#comment> "Community pharmacists are the health professionals most accessible to the public. They supply medicines in accordance with a prescription or, when legally permitted, sell them without a prescription." .
+<https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "CommunityPharmacist is a sub-cñass of Pharmacist." .
+<https://w3id.org/def/SmartHealthCare#CommunityPharmacist> <http://www.w3.org/2000/01/rdf-schema#label> "CommunityPharmacist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Consultation
 <https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/2000/01/rdf-schema#comment> "Consultation is the act of seeking assistance from another physician(s) or health care professional(s) for diagnostic studies, therapeutic interventions, or other services that may benefit the patient." .
+<https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Consultation is a sub-class of Event." .
+<https://w3id.org/def/SmartHealthCare#Consultation> <http://www.w3.org/2000/01/rdf-schema#label> "Consultation" .
 # 
 # https://w3id.org/def/SmartHealthCare#Cough
 <https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/2000/01/rdf-schema#comment> "A rapid expulsion of air from the lungs, typically in order to clear the lung airways of fluids, mucus, or other material. Also known as tussis" .
+<https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Cough is a sub-class of Sympoms." .
+<https://w3id.org/def/SmartHealthCare#Cough> <http://www.w3.org/2000/01/rdf-schema#label> "Cough" .
 # 
 # https://w3id.org/def/SmartHealthCare#Diagnosis
 <https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical diagnosis is the process of determining which disease or condition explains a person's symptoms and signs." .
+<https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Diagnosis is sub-class of Event." .
+<https://w3id.org/def/SmartHealthCare#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnosis" .
 # 
 # https://w3id.org/def/SmartHealthCare#Doctor
 <https://w3id.org/def/SmartHealthCare#Doctor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -165,19 +195,30 @@
 # https://w3id.org/def/SmartHealthCare#Event
 <https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Event is a consequence of  care that results several kind of physical states." .
 <https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Event is a subclass of Health care." .
+<https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
 # 
 # https://w3id.org/def/SmartHealthCare#Fever
 <https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/2000/01/rdf-schema#comment> "Although a fever technically is any body temperature above the normal of 98.6 F (37 C), in practice a person is usually not considered to have a significant fever until the temperature is above 100.4 F (38 C)" .
+<https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Fever is a sub-class of Symptoms." .
+<https://w3id.org/def/SmartHealthCare#Fever> <http://www.w3.org/2000/01/rdf-schema#label> "Fever" .
 # 
 # https://w3id.org/def/SmartHealthCare#GeneralPractice
 <https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/2000/01/rdf-schema#comment> "General practice (GP) General practitioners (GPs) treat all common medical conditions and refer patients to hospitals and other medical services for urgent and specialist treatment." .
+<https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Organization is a sub-class of HealthCare" .
+<https://w3id.org/def/SmartHealthCare#GeneralPractice> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralPractice" .
 # 
 # https://w3id.org/def/SmartHealthCare#Headache
 <https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/2000/01/rdf-schema#comment> "Headache is pain in any region of the head. Headaches may occur on one or both sides of the head, be isolated to a certain location, radiate across the head from one point, or have a viselike quality." .
+<https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Headache is a sub-class of symptoms." .
+<https://w3id.org/def/SmartHealthCare#Headache> <http://www.w3.org/2000/01/rdf-schema#label> "Headache" .
 # 
 # https://w3id.org/def/SmartHealthCare#HealthCare
 <https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -187,25 +228,43 @@
 # 
 # https://w3id.org/def/SmartHealthCare#HealthDevices
 <https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life." .
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HealthDevices is a sub-class" .
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#label> "HealthDevices" .
 # 
 # https://w3id.org/def/SmartHealthCare#HealthProvider
 <https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "HealthProvider" .
+<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO." .
 # 
 # https://w3id.org/def/SmartHealthCare#HeartBeat
 <https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm). The heart rate can vary according to the body's physical needs, including the need to absorb oxygen and excrete carbon dioxide. ..." .
+<https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HeartBeat is a sub-class of Symptoms." .
+<https://w3id.org/def/SmartHealthCare#HeartBeat> <http://www.w3.org/2000/01/rdf-schema#label> "HeartBeat" .
 # 
 # https://w3id.org/def/SmartHealthCare#HeartbeatSensors
 <https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+<https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/2000/01/rdf-schema#comment> "A heart rate monitor (HRM) is a personal monitoring device that allows one to measure/display ... Medical heart rate monitoring used in hospitals is usually wired and usually multiple sensors are used." .
+<https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HeartbeatSensors is a sub-class of Sensores." .
+<https://w3id.org/def/SmartHealthCare#HeartbeatSensors> <http://www.w3.org/2000/01/rdf-schema#label> "HeartbeatSensors" .
 # 
 # https://w3id.org/def/SmartHealthCare#Hospital
 <https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/2000/01/rdf-schema#comment> "A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment." .
+<https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Hospital is a sub-class of HealthCare" .
+<https://w3id.org/def/SmartHealthCare#Hospital> <http://www.w3.org/2000/01/rdf-schema#label> "Hospital" .
 # 
 # https://w3id.org/def/SmartHealthCare#Insurance
 <https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/2000/01/rdf-schema#comment> "Health insurance is a type of insurance coverage that pays for medical and surgical expenses incurred by the insured." .
+<https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Insurance is a sub-class of Organization" .
+<https://w3id.org/def/SmartHealthCare#Insurance> <http://www.w3.org/2000/01/rdf-schema#label> "Insurance" .
 # 
 # https://w3id.org/def/SmartHealthCare#InsurancePolicy
 <https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -222,6 +281,9 @@
 # https://w3id.org/def/SmartHealthCare#Medical_Oncologist
 <https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Oncologist> .
+<https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical oncologist often is the main health care provider for someone who has cancer." .
+<https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Medical_Oncologist is a sub-class of Oncologist" .
+<https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Medical_Oncologist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Nurse
 <https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -230,15 +292,23 @@
 # https://w3id.org/def/SmartHealthCare#Oncologist
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#comment> "A doctor who has special training in diagnosing and treating cancer in adults using chemotherapy, hormonal therapy, biological therapy, and targeted therapy." .
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Oncologist is a sub-class of Physician." .
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Oncologist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist
 <https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> .
+<https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#comment> "Oncology pharmacists ensure safety in compounding, preparing, and dispensing chemotherapy. ... Because of their expert knowledge of medications, pharmacists play an important role in educating patients, caregivers, and other health care professionals." .
+<https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Oncology_Pharamacist is a sub-class of ClinicalPharmacist" .
+<https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#label> "Oncology_Pharmacist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Organization
 <https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A health system, also sometimes referred to as health care system or healthcare organization, is the organization of people, institutions, and resources that deliver health care services to meet the health needs of target populations." .
 <https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Organization is a subclass of health care." .
+<https://w3id.org/def/SmartHealthCare#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
 # https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -247,39 +317,65 @@
 # https://w3id.org/def/SmartHealthCare#Pharmacist
 <https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthProvider> .
+<https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/2000/01/rdf-schema#comment> "The pharmacist verifies the legality, safety and appropriateness of the prescription order, checks the patient medication record before dispensing the prescription, ensures that the quantities of medication are dispensed accurately, and decides whether the medication should be handed to the patient, with appropriate counselling." .
+<https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Pharmacist is a sub-class of HealthProvider." .
+<https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/2000/01/rdf-schema#label> "Pharmacist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist
 <https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#ClinicalPharmacist> .
+<https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#comment> "Psychiatric pharmacist are the specialist of clinical pharmacy for the treatment of people with psychiatric illnesses through the use of psychotropic medications." .
+<https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Phychiatric_Pharmacist is a sub-class of Pharmacist" .
+<https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist> <http://www.w3.org/2000/01/rdf-schema#label> "Phychiatric_Pharmacist" .
 # 
 # https://w3id.org/def/SmartHealthCare#Physician
 <https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthProvider> .
+<https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/2000/01/rdf-schema#comment> "A physician, medical practitioner, medical doctor, or simply doctor, is a professional who practises medicine, which is concerned with promoting, maintaining, or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments." .
+<https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Physician is  a sub-class of HealthProvider." .
+<https://w3id.org/def/SmartHealthCare#Physician> <http://www.w3.org/2000/01/rdf-schema#label> "Physician" .
 # 
 # https://w3id.org/def/SmartHealthCare#Pulmonologist
 <https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+<https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/2000/01/rdf-schema#comment> "Pulmonologists treat breathing disorders, and may also specialize in some treatment of sleep disorders, severe allergies, and other lung conditions and diseases." .
+<https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Pulmonologist is a sub-class of Physician" .
+<https://w3id.org/def/SmartHealthCare#Pulmonologist> <http://www.w3.org/2000/01/rdf-schema#label> "Pulmonologist" .
 # 
 # https://w3id.org/def/SmartHealthCare#RFID
 <https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/2000/01/rdf-schema#comment> "RFID is present in many forms – from tracking of surgical tools to tracking patients and staff." .
+<https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "RFID is a sub-class of HealthDevices." .
+<https://w3id.org/def/SmartHealthCare#RFID> <http://www.w3.org/2000/01/rdf-schema#label> "RFID" .
 # 
 # https://w3id.org/def/SmartHealthCare#Radiation_Oncologist
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Oncologist> .
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#comment> "Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families." .
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation_Oncologist" .
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation_Oncologist is a sub-class of Oncologist." .
 # 
 # https://w3id.org/def/SmartHealthCare#Record
 <https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
-<https://w3id.org/def/SmartHealthCare#Record> <http://purl.org/dc/elements/1.1/creater> "" .
+<https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/2000/01/rdf-schema#comment> "A record of a patient's medical information (as medical history, care or treatments received, test results, diagnoses, and medications taken)" .
+<https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Record is a sub-class of HealthCare." .
+<https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/2000/01/rdf-schema#label> "Record" .
 # 
 # https://w3id.org/def/SmartHealthCare#Referral
 <https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/2000/01/rdf-schema#comment> "A written order from your primary care doctor for you to see a specialist or get certain medical services." .
+<https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Referral is a sub-class of Event." .
+<https://w3id.org/def/SmartHealthCare#Referral> <http://www.w3.org/2000/01/rdf-schema#label> "Referral" .
 # 
 # https://w3id.org/def/SmartHealthCare#Sensores
 <https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensors are devices that detect physical, chemical, and biological signals and provide a way for those signals to be measured and recorded." .
+<https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Sensores is a sub-class of HealthDevices" .
+<https://w3id.org/def/SmartHealthCare#Sensores> <http://www.w3.org/2000/01/rdf-schema#label> "Sensores" .
 # 
 # https://w3id.org/def/SmartHealthCare#Surgeon
 <https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -288,17 +384,28 @@
 # https://w3id.org/def/SmartHealthCare#Surgery
 <https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/2000/01/rdf-schema#comment> "The branch of medicine that employs operations in the treatment of disease or injury. Surgery can involve cutting, abrading, suturing, or otherwise physically changing body tissues and organs." .
+<https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Surgery is a sub-class of Event" .
+<https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/2000/01/rdf-schema#label> "Surgery" .
 # 
 # https://w3id.org/def/SmartHealthCare#Sympotoms
 <https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/2000/01/rdf-schema#comment> "A symptom is a departure from normal function or feeling which is apparent to a patient, reflecting the presence of an unusual state, or of a disease. A symptom can be subjective or objective." .
+<https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Symptoms is a sub-class of Event." .
+<https://w3id.org/def/SmartHealthCare#Sympotoms> <http://www.w3.org/2000/01/rdf-schema#label> "Symptoms" .
 # 
 # https://w3id.org/def/SmartHealthCare#TemperatureSensors
 <https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Sensores> .
+<https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/2000/01/rdf-schema#comment> "One used to determine the temperature of the patient in clinical situations. a clinical thermometer using a sensor based on thermistors, solid-state electronic devices whose electrical characteristics change with temperature." .
+<https://w3id.org/def/SmartHealthCare#TemperatureSensors> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature Sensors" .
 # 
 # https://w3id.org/def/SmartHealthCare#Treatment
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Event> .
+<https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical treatment means the management and care of a patient to combat disease or disorder." .
+<https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Treatment is a sub-class of Event." .
+<https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment" .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
