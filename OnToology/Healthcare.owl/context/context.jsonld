@@ -91,6 +91,9 @@
     "Actor" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
     },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
     "Physician" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
     },

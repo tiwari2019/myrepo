@@ -9,7 +9,7 @@
 <https://w3id.org/def/sanjutiwari> rdf:type owl:Ontology ;
                                     <http://purl.org/dc/elements/1.1/contributor> "Dr. Maria Poveda" ,
                                                                                   "Prof. Dr. Ajith Abraham" ;
-                                    <http://purl.org/dc/elements/1.1/creater> "Dr. Sanju Tiwari" ;
+                                    <http://purl.org/dc/elements/1.1/creator> "Dr. Sanju Tiwari" ;
                                     <http://purl.org/dc/elements/1.1/description> "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries." ;
                                     <http://purl.org/dc/elements/1.1/title> "Smart Health Care Ontology for Health Care" ;
                                     <http://purl.org/dc/terms/created> "04/12/2018" ;
@@ -25,6 +25,10 @@
 
 ###  http://purl.org/dc/elements/1.1/creater
 <http://purl.org/dc/elements/1.1/creater> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/description

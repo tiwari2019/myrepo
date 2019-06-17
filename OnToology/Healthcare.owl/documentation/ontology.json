@@ -5,6 +5,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/creater",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -751,7 +754,7 @@
   }, {
     "@value" : "Prof. Dr. Ajith Abraham"
   } ],
-  "http://purl.org/dc/elements/1.1/creater" : [ {
+  "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Dr. Sanju Tiwari"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {

@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="https://w3id.org/def/sanjutiwari">
         <dc:contributor>Dr. Maria Poveda</dc:contributor>
         <dc:contributor>Prof. Dr. Ajith Abraham</dc:contributor>
-        <dc:creater>Dr. Sanju Tiwari</dc:creater>
+        <dc:creator>Dr. Sanju Tiwari</dc:creator>
         <dc:description>It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries.</dc:description>
         <dc:title>Smart Health Care Ontology for Health Care</dc:title>
         <terms:created>04/12/2018</terms:created>
@@ -43,6 +43,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
