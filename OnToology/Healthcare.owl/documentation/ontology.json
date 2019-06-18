@@ -3,7 +3,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Dr. Sanju Tiwari"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -748,6 +751,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@value" : "Dr. Maria Poveda"
+  }, {
+    "@value" : "Dr. Raul Garcia Castro"
   }, {
     "@value" : "Prof. Dr. Ajith Abraham"
   } ],
