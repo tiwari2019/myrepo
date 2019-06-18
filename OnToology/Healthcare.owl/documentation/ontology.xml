@@ -10,7 +10,6 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/sanjutiwari">
         <dc:contributor>Dr. Maria Poveda</dc:contributor>
-        <dc:contributor>Dr. Raul Garcia Castro</dc:contributor>
         <dc:contributor>Prof. Dr. Ajith Abraham</dc:contributor>
         <dc:creator>Dr. Sanju Tiwari</dc:creator>
         <dc:description>It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries.</dc:description>
