@@ -752,8 +752,6 @@
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@value" : "Dr. Maria Poveda"
   }, {
-    "@value" : "Dr. Raul Garcia Castro"
-  }, {
     "@value" : "Prof. Dr. Ajith Abraham"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
