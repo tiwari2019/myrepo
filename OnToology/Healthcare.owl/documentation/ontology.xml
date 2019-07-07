@@ -203,7 +203,6 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Actor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
         <rdfs:comment>Actor can perform a concrete intervention or problem assessment such as Doctor, Manager, Nurse, Patient, Surgeon etc,</rdfs:comment>
         <rdfs:isDefinedBy>Actor is  subclass of health care.</rdfs:isDefinedBy>
         <rdfs:label>Actor</rdfs:label>
@@ -216,7 +215,6 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Actuators">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
         <rdfs:comment>An actuator is a device that converts energy into motion or applies force. The mechanical device takes energy in the form of hydraulics, pneumatics, or from a motor, and converts it into motion.</rdfs:comment>
         <rdfs:isDefinedBy>Actuators is a sub-class of healthDevices</rdfs:isDefinedBy>
         <rdfs:label>Actuators</rdfs:label>
@@ -426,13 +424,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthDevices">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#has"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/sanjutiwari#Function"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life.</rdfs:comment>
         <rdfs:isDefinedBy>HealthDevices is a sub-class</rdfs:isDefinedBy>
         <rdfs:label>HealthDevices</rdfs:label>
@@ -766,17 +757,6 @@
     
 
 
-    <!-- https://w3id.org/def/sanjutiwari#ActuatingFunction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#ActuatingFunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Function"/>
-        <rdfs:isDefinedBy>It is a subclass of Function.</rdfs:isDefinedBy>
-        <rdfs:label>ActuatingFunction</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/sanjutiwari#BloodPressure -->
 
 
@@ -802,17 +782,7 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
         <rdfs:comment>It is a cause who makes person abnormal.</rdfs:comment>
         <rdfs:isDefinedBy>Disease is a subclassof  Healthcare.</rdfs:isDefinedBy>
-        <rdfs:label>Disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/sanjutiwari#Function -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#Function">
-        <rdfs:comment>A class for managing the functions</rdfs:comment>
-        <rdfs:label>Function</rdfs:label>
+        <rdfs:label>Diseases</rdfs:label>
     </owl:Class>
     
 
@@ -865,17 +835,6 @@
         <rdfs:comment>A patient suffering from lever problem.</rdfs:comment>
         <rdfs:isDefinedBy>It is a subclass of Patient.</rdfs:isDefinedBy>
         <rdfs:label>LeverPatient</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/sanjutiwari#SensingFunction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#SensingFunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Function"/>
-        <rdfs:isDefinedBy>It is a subclass of Function.</rdfs:isDefinedBy>
-        <rdfs:label>SensingFunction</rdfs:label>
     </owl:Class>
     
 

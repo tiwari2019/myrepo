@@ -1,17 +1,13 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "https://w3id.org/def/SmartHealthCare#Actuators" "https://w3id.org/def/SmartHealthCare#Cardiologist" "https://w3id.org/def/SmartHealthCare#BPSensores" "https://w3id.org/def/SmartHealthCare#HealthDevices" "https://w3id.org/def/SmartHealthCare#Surgeon" "https://w3id.org/def/SmartHealthCare#Doctor" "https://w3id.org/def/SmartHealthCare#Nurse" "base:Function" "https://w3id.org/def/SmartHealthCare#Sympotoms" "https://w3id.org/def/SmartHealthCare#Sensores" "https://w3id.org/def/SmartHealthCare#Actor" "https://w3id.org/def/SmartHealthCare#Patient" ; /*classes style*/
-	"https://w3id.org/def/SmartHealthCare#Actuators" -> "https://w3id.org/def/SmartHealthCare#Sensores" [ label = "owl:disjointWith" ];
-	"https://w3id.org/def/SmartHealthCare#Actor" -> "https://w3id.org/def/SmartHealthCare#HealthDevices" [ label = "owl:disjointWith" ];
-	"NULL" -> "https://w3id.org/def/SmartHealthCare#Cardiologist" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://w3id.org/def/SmartHealthCare#treated_by" [ label = "owl:onProperty" ];
-	"NULL" -> "base:Function" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "https://w3id.org/def/SmartHealthCare#has" [ label = "owl:onProperty" ];
+node [shape = rectangle, color="orange"]; "https://w3id.org/def/SmartHealthCare#Cardiologist" "https://w3id.org/def/SmartHealthCare#BPSensores" "https://w3id.org/def/SmartHealthCare#HealthDevices" "https://w3id.org/def/SmartHealthCare#Surgeon" "https://w3id.org/def/SmartHealthCare#Doctor" "https://w3id.org/def/SmartHealthCare#Nurse" "https://w3id.org/def/SmartHealthCare#Sympotoms" "https://w3id.org/def/SmartHealthCare#Patient" ; /*classes style*/
 	"NULL" -> "https://w3id.org/def/SmartHealthCare#Doctor" [ label = "owl:onClass" ];
 	"NULL" -> "https://w3id.org/def/SmartHealthCare#cared_by" [ label = "owl:onProperty" ];
 	"NULL" -> "https://w3id.org/def/SmartHealthCare#BPSensores" [ label = "owl:onClass" ];
 	"NULL" -> "base:measured_by" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/def/SmartHealthCare#Cardiologist" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://w3id.org/def/SmartHealthCare#treated_by" [ label = "owl:onProperty" ];
 	"https://w3id.org/def/SmartHealthCare#HealthDevices" -> "https://w3id.org/def/SmartHealthCare#Doctor" [ label = "https://w3id.org/def/SmartHealthCare#transfer_data_to" ];
 	"https://w3id.org/def/SmartHealthCare#Doctor" -> "https://w3id.org/def/SmartHealthCare#Patient" [ label = "https://w3id.org/def/SmartHealthCare#looks_for" ];
 	"https://w3id.org/def/SmartHealthCare#Patient" -> "https://w3id.org/def/SmartHealthCare#Doctor" [ label = "https://w3id.org/def/SmartHealthCare#treated_by" ];
