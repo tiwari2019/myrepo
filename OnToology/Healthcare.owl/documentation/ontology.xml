@@ -92,6 +92,9 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#cares_for"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
+        <owl:propertyDisjointWith rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
+        <rdfs:comment>Property for Patient</rdfs:comment>
+        <rdfs:label>cared_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,6 +105,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#cares_for">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>A property for Doctors</rdfs:comment>
+        <rdfs:label>cares_for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -112,6 +117,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#has">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:label>has</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -123,6 +129,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:label>looks_for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,6 +141,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#operates_by"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:label>operates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -144,6 +152,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#operates_by">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
+        <rdfs:label>operates_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -156,6 +165,7 @@
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:label>transfer_data_to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -166,6 +176,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#treated_by">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+        <rdfs:label>treated_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -173,7 +184,11 @@
     <!-- https://w3id.org/def/sanjutiwari#measured_by -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#measured_by"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#measured_by">
+        <rdfs:domain rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:label>measured_by</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
