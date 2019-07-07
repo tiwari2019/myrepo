@@ -86,6 +86,9 @@
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Doctor> .
 # 
+# https://w3id.org/def/sanjutiwari#measured_by
+<https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -312,6 +315,14 @@
 # https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#cared_by> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#Doctor> .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who needs treatment." .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Patient is a subclass of Actor." .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
 # 
 # https://w3id.org/def/SmartHealthCare#Pharmacist
 <https://w3id.org/def/SmartHealthCare#Pharmacist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -352,8 +363,8 @@
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Oncologist> .
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#comment> "Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families." .
+<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Radiation_Oncologist is a subclass of Oncologist." .
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation_Oncologist" .
-<https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation_Oncologist is a sub-class of Oncologist." .
 # 
 # https://w3id.org/def/SmartHealthCare#Record
 <https://w3id.org/def/SmartHealthCare#Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -406,6 +417,107 @@
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Medical treatment means the management and care of a patient to combat disease or disorder." .
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Treatment is a sub-class of Event." .
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment" .
+# 
+# https://w3id.org/def/sanjutiwari#BloodPressure
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "BloodPressure is a subclass of Disease." .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "BloodPressure" .
+# 
+# https://w3id.org/def/sanjutiwari#Diseases
+<https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a cause who makes person abnormal." .
+<https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Disease is a subclassof  Healthcare." .
+<https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
+# 
+# https://w3id.org/def/sanjutiwari#HeartDisease
+<https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
+<https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HeartDisease is a subclass of Disease." .
+# 
+# https://w3id.org/def/sanjutiwari#HeartPatient
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#treated_by> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/SmartHealthCare#Cardiologist> .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from heart diseases." .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Patient" .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#label> "HeartPatient" .
+# 
+# https://w3id.org/def/sanjutiwari#KidneyPatient
+<https://w3id.org/def/sanjutiwari#KidneyPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#KidneyPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/sanjutiwari#KidneyPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from Kidney problems." .
+<https://w3id.org/def/sanjutiwari#KidneyPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "KidneyPatient is a subclass of Patient." .
+<https://w3id.org/def/sanjutiwari#KidneyPatient> <http://www.w3.org/2000/01/rdf-schema#label> "KidneyPatient" .
+# 
+# https://w3id.org/def/sanjutiwari#LeverPatient
+<https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from lever problem." .
+<https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Patient." .
+<https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#label> "LeverPatient" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/sanjutiwari#Bon
+<https://w3id.org/def/sanjutiwari#Bon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Bon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#KidneyPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Jack
+<https://w3id.org/def/sanjutiwari#Jack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Jack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#HeartPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#John
+<https://w3id.org/def/sanjutiwari#John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#KidneyPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Kan
+<https://w3id.org/def/sanjutiwari#Kan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Kan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#LeverPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Rob
+<https://w3id.org/def/sanjutiwari#Rob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Rob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#HeartPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Robin
+<https://w3id.org/def/sanjutiwari#Robin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Robin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#HeartPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Rock
+<https://w3id.org/def/sanjutiwari#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#LeverPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Sam
+<https://w3id.org/def/sanjutiwari#Sam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Sam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#KidneyPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Som
+<https://w3id.org/def/sanjutiwari#Som> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Som> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#LeverPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Steve
+<https://w3id.org/def/sanjutiwari#Steve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Steve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#HeartPatient> .
+# 
+# https://w3id.org/def/sanjutiwari#Tove
+<https://w3id.org/def/sanjutiwari#Tove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/sanjutiwari#Tove> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/sanjutiwari#LeverPatient> .
 # 
 # 
 # 
