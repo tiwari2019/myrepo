@@ -357,6 +357,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#DoctorsPrescription">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+        <rdfs:comment>It is prescription suggested to patient.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a subclass of Record</rdfs:isDefinedBy>
+        <rdfs:label>DoctorsPrescription</rdfs:label>
     </owl:Class>
     
 
@@ -495,6 +498,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#InsurancePolicy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+        <rdfs:comment>An insurance policy for patients.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a subclass of Record</rdfs:isDefinedBy>
+        <rdfs:label>InsurancePolicy</rdfs:label>
     </owl:Class>
     
 
@@ -504,6 +510,8 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Manager">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>To manage the things.</rdfs:comment>
+        <rdfs:label>Manager</rdfs:label>
     </owl:Class>
     
 
@@ -513,6 +521,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#MedicalRecord">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Record"/>
+        <rdfs:comment>A record of Patient and Staff</rdfs:comment>
+        <rdfs:isDefinedBy>It is a subclass of Record</rdfs:isDefinedBy>
+        <rdfs:label>MedicalRecord</rdfs:label>
     </owl:Class>
     
 
@@ -534,6 +545,8 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Nurse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>Nurse is for caring the people.</rdfs:comment>
+        <rdfs:label>Nurse</rdfs:label>
     </owl:Class>
     
 
@@ -706,6 +719,8 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Surgeon">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>A person to do surgery of patients.</rdfs:comment>
+        <rdfs:label>Surgeon</rdfs:label>
     </owl:Class>
     
 
@@ -769,6 +784,7 @@
                 <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#BPSensores"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>It is a disease.</rdfs:comment>
         <rdfs:isDefinedBy>BloodPressure is a subclass of Disease.</rdfs:isDefinedBy>
         <rdfs:label>BloodPressure</rdfs:label>
     </owl:Class>
@@ -792,7 +808,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#HeartDisease">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+        <rdfs:comment>It is a disease.</rdfs:comment>
         <rdfs:isDefinedBy>HeartDisease is a subclass of Disease.</rdfs:isDefinedBy>
+        <rdfs:label>HeartDisease</rdfs:label>
     </owl:Class>
     
 

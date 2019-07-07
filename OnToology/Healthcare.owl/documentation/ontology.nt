@@ -193,6 +193,9 @@
 # https://w3id.org/def/SmartHealthCare#DoctorsPrescription
 <https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+<https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/2000/01/rdf-schema#comment> "It is prescription suggested to patient." .
+<https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Record" .
+<https://w3id.org/def/SmartHealthCare#DoctorsPrescription> <http://www.w3.org/2000/01/rdf-schema#label> "DoctorsPrescription" .
 # 
 # https://w3id.org/def/SmartHealthCare#Event
 <https://w3id.org/def/SmartHealthCare#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -271,14 +274,22 @@
 # https://w3id.org/def/SmartHealthCare#InsurancePolicy
 <https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+<https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "An insurance policy for patients." .
+<https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Record" .
+<https://w3id.org/def/SmartHealthCare#InsurancePolicy> <http://www.w3.org/2000/01/rdf-schema#label> "InsurancePolicy" .
 # 
 # https://w3id.org/def/SmartHealthCare#Manager
 <https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/2000/01/rdf-schema#comment> "To manage the things." .
+<https://w3id.org/def/SmartHealthCare#Manager> <http://www.w3.org/2000/01/rdf-schema#label> "Manager" .
 # 
 # https://w3id.org/def/SmartHealthCare#MedicalRecord
 <https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Record> .
+<https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record of Patient and Staff" .
+<https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Record" .
+<https://w3id.org/def/SmartHealthCare#MedicalRecord> <http://www.w3.org/2000/01/rdf-schema#label> "MedicalRecord" .
 # 
 # https://w3id.org/def/SmartHealthCare#Medical_Oncologist
 <https://w3id.org/def/SmartHealthCare#Medical_Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -290,6 +301,8 @@
 # https://w3id.org/def/SmartHealthCare#Nurse
 <https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/2000/01/rdf-schema#comment> "Nurse is for caring the people." .
+<https://w3id.org/def/SmartHealthCare#Nurse> <http://www.w3.org/2000/01/rdf-schema#label> "Nurse" .
 # 
 # https://w3id.org/def/SmartHealthCare#Oncologist
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -390,6 +403,8 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 # https://w3id.org/def/SmartHealthCare#Surgeon
 <https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/2000/01/rdf-schema#comment> "A person to do surgery of patients." .
+<https://w3id.org/def/SmartHealthCare#Surgeon> <http://www.w3.org/2000/01/rdf-schema#label> "Surgeon" .
 # 
 # https://w3id.org/def/SmartHealthCare#Surgery
 <https://w3id.org/def/SmartHealthCare#Surgery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -426,6 +441,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
 _:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a disease." .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "BloodPressure is a subclass of Disease." .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "BloodPressure" .
 # 
@@ -439,7 +455,9 @@ _:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 # https://w3id.org/def/sanjutiwari#HeartDisease
 <https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
+<https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a disease." .
 <https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HeartDisease is a subclass of Disease." .
+<https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#label> "HeartDisease" .
 # 
 # https://w3id.org/def/sanjutiwari#HeartPatient
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -215,7 +215,10 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#DoctorsPrescription
 <https://w3id.org/def/SmartHealthCare#DoctorsPrescription> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> .
+                                                           rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> ;
+                                                           rdfs:comment "It is prescription suggested to patient." ;
+                                                           rdfs:isDefinedBy "It is a subclass of Record" ;
+                                                           rdfs:label "DoctorsPrescription" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Event
@@ -305,17 +308,25 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#InsurancePolicy
 <https://w3id.org/def/SmartHealthCare#InsurancePolicy> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> .
+                                                       rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> ;
+                                                       rdfs:comment "An insurance policy for patients." ;
+                                                       rdfs:isDefinedBy "It is a subclass of Record" ;
+                                                       rdfs:label "InsurancePolicy" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Manager
 <https://w3id.org/def/SmartHealthCare#Manager> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> .
+                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
+                                               rdfs:comment "To manage the things." ;
+                                               rdfs:label "Manager" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#MedicalRecord
 <https://w3id.org/def/SmartHealthCare#MedicalRecord> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> .
+                                                     rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> ;
+                                                     rdfs:comment "A record of Patient and Staff" ;
+                                                     rdfs:isDefinedBy "It is a subclass of Record" ;
+                                                     rdfs:label "MedicalRecord" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Medical_Oncologist
@@ -328,7 +339,9 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Nurse
 <https://w3id.org/def/SmartHealthCare#Nurse> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> .
+                                             rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
+                                             rdfs:comment "Nurse is for caring the people." ;
+                                             rdfs:label "Nurse" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Oncologist
@@ -442,7 +455,9 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Surgeon
 <https://w3id.org/def/SmartHealthCare#Surgeon> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> .
+                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
+                                               rdfs:comment "A person to do surgery of patients." ;
+                                               rdfs:label "Surgeon" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Surgery
@@ -484,6 +499,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass <https://w3id.org/def/SmartHealthCare#BPSensores>
                                ] ;
+               rdfs:comment "It is a disease." ;
                rdfs:isDefinedBy "BloodPressure is a subclass of Disease." ;
                rdfs:label "BloodPressure" .
 
@@ -499,7 +515,9 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 ###  https://w3id.org/def/sanjutiwari#HeartDisease
 :HeartDisease rdf:type owl:Class ;
               rdfs:subClassOf :Diseases ;
-              rdfs:isDefinedBy "HeartDisease is a subclass of Disease." .
+              rdfs:comment "It is a disease." ;
+              rdfs:isDefinedBy "HeartDisease is a subclass of Disease." ;
+              rdfs:label "HeartDisease" .
 
 
 ###  https://w3id.org/def/sanjutiwari#HeartPatient
