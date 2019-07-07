@@ -124,6 +124,9 @@
     "Sensores" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
     },
+    "ActuatingFunction" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#ActuatingFunction"
+    },
     "Insurance" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Insurance"
     },
@@ -168,6 +171,9 @@
     "DoctorsPrescription" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#DoctorsPrescription"
     },
+    "SensingFunction" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#SensingFunction"
+    },
     "Record" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Record"
     },
@@ -189,6 +195,9 @@
     },
     "Body_Temp" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Body_Temp"
+    },
+    "Function" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#Function"
     },
     "has" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#has",
