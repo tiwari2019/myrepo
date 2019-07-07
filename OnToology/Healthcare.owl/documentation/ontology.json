@@ -1,6 +1,15 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#has"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Function"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
@@ -12,7 +21,7 @@
     "@id" : "https://w3id.org/def/SmartHealthCare#cared_by"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -25,7 +34,7 @@
     "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
@@ -73,6 +82,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Actuators",
@@ -88,6 +100,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Administrator",
@@ -337,6 +352,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HealthDevices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider",
@@ -508,7 +528,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
@@ -816,6 +836,18 @@
     "@value" : "1.1"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/sanjutiwari#ActuatingFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a subclass of Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ActuatingFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Function"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/sanjutiwari#BloodPressure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -827,7 +859,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Bon",
@@ -846,6 +878,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A class for managing the functions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Function"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#HeartDisease",
@@ -871,7 +912,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Jack",
@@ -924,6 +965,18 @@
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Sam",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#KidneyPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#SensingFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a subclass of Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SensingFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Function"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Som",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]

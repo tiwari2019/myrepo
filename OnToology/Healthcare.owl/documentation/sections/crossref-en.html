@@ -7,6 +7,10 @@ This section provides details for each class and property defined by Smart Healt
          <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/sanjutiwari#ActuatingFunction"
+            title="https://w3id.org/def/sanjutiwari#ActuatingFunction">ActuatingFunction</a>
+      </li>
+      <li>
          <a href="#Actuators" title="https://w3id.org/def/SmartHealthCare#Actuators">Actuators</a>
       </li>
       <li>
@@ -64,6 +68,9 @@ This section provides details for each class and property defined by Smart Healt
       </li>
       <li>
          <a href="#Fever" title="https://w3id.org/def/SmartHealthCare#Fever">Fever</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/sanjutiwari#Function" title="https://w3id.org/def/sanjutiwari#Function">Function</a>
       </li>
       <li>
          <a href="#GeneralPractice"
@@ -180,6 +187,10 @@ This section provides details for each class and property defined by Smart Healt
          <a href="#RFID" title="https://w3id.org/def/SmartHealthCare#RFID">RFID</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/sanjutiwari#SensingFunction"
+            title="https://w3id.org/def/sanjutiwari#SensingFunction">SensingFunction</a>
+      </li>
+      <li>
          <a href="#Sensores" title="https://w3id.org/def/SmartHealthCare#Sensores">Sensores</a>
       </li>
       <li>
@@ -232,6 +243,31 @@ This section provides details for each class and property defined by Smart Healt
             <sup class="type-c" title="class">c</sup>, <a href="#Surgeon" title="https://w3id.org/def/SmartHealthCare#Surgeon">surgeon</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#HealthDevices"
+               title="https://w3id.org/def/SmartHealthCare#HealthDevices">HealthDevices</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#ActuatingFunction">
+      <h3>ActuatingFunction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#ActuatingFunction</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#Function" title="https://w3id.org/def/sanjutiwari#Function">Function</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Actuators">
@@ -253,6 +289,11 @@ This section provides details for each class and property defined by Smart Healt
          <dd>
             <a href="#HealthDevices"
                title="https://w3id.org/def/SmartHealthCare#HealthDevices">HealthDevices</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Sensores" title="https://w3id.org/def/SmartHealthCare#Sensores">Sensores</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -628,6 +669,27 @@ This section provides details for each class and property defined by Smart Healt
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#Function">
+      <h3>Function<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#Function</p>
+      <div class="comment">
+         <span class="markdown">A class for managing the functions</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#ActuatingFunction"
+               title="https://w3id.org/def/sanjutiwari#ActuatingFunction">ActuatingFunction</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/sanjutiwari#SensingFunction"
+               title="https://w3id.org/def/sanjutiwari#SensingFunction">SensingFunction</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="GeneralPractice">
       <h3>GeneralPractice<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -740,6 +802,11 @@ This section provides details for each class and property defined by Smart Healt
          <dd>https://w3id.org/def/SmartHealthCare</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Actuators" title="https://w3id.org/def/SmartHealthCare#Actuators">Actuators</a>
@@ -752,6 +819,11 @@ This section provides details for each class and property defined by Smart Healt
             <a href="#transfer_data_to"
                title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer data to</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1383,6 +1455,25 @@ This section provides details for each class and property defined by Smart Healt
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#SensingFunction">
+      <h3>SensingFunction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#SensingFunction</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#Function" title="https://w3id.org/def/sanjutiwari#Function">Function</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Sensores">
       <h3>Sensores<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1411,6 +1502,11 @@ This section provides details for each class and property defined by Smart Healt
                title="https://w3id.org/def/SmartHealthCare#HeartbeatSensors">HeartbeatSensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#TemperatureSensors"
                title="https://w3id.org/def/SmartHealthCare#TemperatureSensors">Temperature Sensors</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Actuators" title="https://w3id.org/def/SmartHealthCare#Actuators">Actuators</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

@@ -104,6 +104,7 @@
 # https://w3id.org/def/SmartHealthCare#Actor
 <https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
 <https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor can perform a concrete intervention or problem assessment such as Doctor, Manager, Nurse, Patient, Surgeon etc," .
 <https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Actor is  subclass of health care." .
 <https://w3id.org/def/SmartHealthCare#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
@@ -111,6 +112,7 @@
 # https://w3id.org/def/SmartHealthCare#Actuators
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/SmartHealthCare#Sensores> .
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator is a device that converts energy into motion or applies force. The mechanical device takes energy in the form of hydraulics, pneumatics, or from a motor, and converts it into motion." .
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Actuators is a sub-class of healthDevices" .
 <https://w3id.org/def/SmartHealthCare#Actuators> <http://www.w3.org/2000/01/rdf-schema#label> "Actuators" .
@@ -230,6 +232,11 @@
 # 
 # https://w3id.org/def/SmartHealthCare#HealthDevices
 <https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#has> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sanjutiwari#Function> .
 <https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life." .
 <https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HealthDevices is a sub-class" .
 <https://w3id.org/def/SmartHealthCare#HealthDevices> <http://www.w3.org/2000/01/rdf-schema#label> "HealthDevices" .
@@ -315,11 +322,11 @@
 # https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
-<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#cared_by> .
-_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#Doctor> .
+<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#cared_by> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#Doctor> .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who needs treatment." .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Patient is a subclass of Actor." .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
@@ -418,14 +425,20 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Treatment is a sub-class of Event." .
 <https://w3id.org/def/SmartHealthCare#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment" .
 # 
+# https://w3id.org/def/sanjutiwari#ActuatingFunction
+<https://w3id.org/def/sanjutiwari#ActuatingFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Function> .
+<https://w3id.org/def/sanjutiwari#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Function." .
+<https://w3id.org/def/sanjutiwari#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#label> "ActuatingFunction" .
+# 
 # https://w3id.org/def/sanjutiwari#BloodPressure
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
-<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
-_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "BloodPressure is a subclass of Disease." .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "BloodPressure" .
 # 
@@ -436,6 +449,11 @@ _:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 <https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Disease is a subclassof  Healthcare." .
 <https://w3id.org/def/sanjutiwari#Diseases> <http://www.w3.org/2000/01/rdf-schema#label> "Disease" .
 # 
+# https://w3id.org/def/sanjutiwari#Function
+<https://w3id.org/def/sanjutiwari#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "A class for managing the functions" .
+<https://w3id.org/def/sanjutiwari#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
+# 
 # https://w3id.org/def/sanjutiwari#HeartDisease
 <https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#HeartDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
@@ -444,10 +462,10 @@ _:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 # https://w3id.org/def/sanjutiwari#HeartPatient
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Patient> .
-<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#treated_by> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/SmartHealthCare#Cardiologist> .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#treated_by> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/SmartHealthCare#Cardiologist> .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from heart diseases." .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Patient" .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#label> "HeartPatient" .
@@ -465,6 +483,12 @@ _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/Sm
 <https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from lever problem." .
 <https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Patient." .
 <https://w3id.org/def/sanjutiwari#LeverPatient> <http://www.w3.org/2000/01/rdf-schema#label> "LeverPatient" .
+# 
+# https://w3id.org/def/sanjutiwari#SensingFunction
+<https://w3id.org/def/sanjutiwari#SensingFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/sanjutiwari#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Function> .
+<https://w3id.org/def/sanjutiwari#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Function." .
+<https://w3id.org/def/sanjutiwari#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#label> "SensingFunction" .
 # 
 # 
 # 
