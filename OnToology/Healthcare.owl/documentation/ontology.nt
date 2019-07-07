@@ -46,33 +46,42 @@
 <https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#cares_for> .
 <https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Nurse> .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://w3id.org/def/SmartHealthCare#treated_by> .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for Patient" .
+<https://w3id.org/def/SmartHealthCare#cared_by> <http://www.w3.org/2000/01/rdf-schema#label> "cared_by" .
 # 
 # https://w3id.org/def/SmartHealthCare#cares_for
 <https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Nurse> .
 <https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#comment> "A property for Doctors" .
+<https://w3id.org/def/SmartHealthCare#cares_for> <http://www.w3.org/2000/01/rdf-schema#label> "cares_for" .
 # 
 # https://w3id.org/def/SmartHealthCare#has
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#label> "has" .
 # 
 # https://w3id.org/def/SmartHealthCare#looks_for
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#treated_by> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Doctor> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#label> "looks_for" .
 # 
 # https://w3id.org/def/SmartHealthCare#operates
 <https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#operates_by> .
 <https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Surgeon> .
 <https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#operates> <http://www.w3.org/2000/01/rdf-schema#label> "operates" .
 # 
 # https://w3id.org/def/SmartHealthCare#operates_by
 <https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Surgeon> .
+<https://w3id.org/def/SmartHealthCare#operates_by> <http://www.w3.org/2000/01/rdf-schema#label> "operates_by" .
 # 
 # https://w3id.org/def/SmartHealthCare#transfer_data_to
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -80,14 +89,19 @@
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Doctor> .
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Nurse> .
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#label> "transfer_data_to" .
 # 
 # https://w3id.org/def/SmartHealthCare#treated_by
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Doctor> .
+<https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#label> "treated_by" .
 # 
 # https://w3id.org/def/sanjutiwari#measured_by
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/sanjutiwari#Diseases> .
+<https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Sensores> .
+<https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#label> "measured_by" .
 # 
 # 
 # 

@@ -50,39 +50,48 @@
 <https://w3id.org/def/SmartHealthCare#cared_by> rdf:type owl:ObjectProperty ;
                                                 owl:inverseOf <https://w3id.org/def/SmartHealthCare#cares_for> ;
                                                 rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
-                                                rdfs:range <https://w3id.org/def/SmartHealthCare#Nurse> .
+                                                rdfs:range <https://w3id.org/def/SmartHealthCare#Nurse> ;
+                                                owl:propertyDisjointWith <https://w3id.org/def/SmartHealthCare#treated_by> ;
+                                                rdfs:comment "Property for Patient" ;
+                                                rdfs:label "cared_by" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#cares_for
 <https://w3id.org/def/SmartHealthCare#cares_for> rdf:type owl:ObjectProperty ;
                                                  rdfs:domain <https://w3id.org/def/SmartHealthCare#Nurse> ;
-                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> .
+                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                 rdfs:comment "A property for Doctors" ;
+                                                 rdfs:label "cares_for" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#has
 <https://w3id.org/def/SmartHealthCare#has> rdf:type owl:ObjectProperty ;
                                            rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
-                                           rdfs:range <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+                                           rdfs:range <https://w3id.org/def/SmartHealthCare#Sympotoms> ;
+                                           rdfs:label "has" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#looks_for
 <https://w3id.org/def/SmartHealthCare#looks_for> rdf:type owl:ObjectProperty ;
                                                  owl:inverseOf <https://w3id.org/def/SmartHealthCare#treated_by> ;
                                                  rdfs:domain <https://w3id.org/def/SmartHealthCare#Doctor> ;
-                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> .
+                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                 rdfs:label "looks_for" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#operates
 <https://w3id.org/def/SmartHealthCare#operates> rdf:type owl:ObjectProperty ;
                                                 owl:inverseOf <https://w3id.org/def/SmartHealthCare#operates_by> ;
                                                 rdfs:domain <https://w3id.org/def/SmartHealthCare#Surgeon> ;
-                                                rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> .
+                                                rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                rdfs:label "operates" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#operates_by
 <https://w3id.org/def/SmartHealthCare#operates_by> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
-                                                   rdfs:range <https://w3id.org/def/SmartHealthCare#Surgeon> .
+                                                   rdfs:range <https://w3id.org/def/SmartHealthCare#Surgeon> ;
+                                                   rdfs:label "operates_by" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#transfer_data_to
@@ -90,17 +99,22 @@
                                                         rdfs:domain <https://w3id.org/def/SmartHealthCare#HealthDevices> ;
                                                         rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> ,
                                                                    <https://w3id.org/def/SmartHealthCare#Nurse> ,
-                                                                   <https://w3id.org/def/SmartHealthCare#Patient> .
+                                                                   <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                        rdfs:label "transfer_data_to" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#treated_by
 <https://w3id.org/def/SmartHealthCare#treated_by> rdf:type owl:ObjectProperty ;
                                                   rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
-                                                  rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> .
+                                                  rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> ;
+                                                  rdfs:label "treated_by" .
 
 
 ###  https://w3id.org/def/sanjutiwari#measured_by
-:measured_by rdf:type owl:ObjectProperty .
+:measured_by rdf:type owl:ObjectProperty ;
+             rdfs:domain :Diseases ;
+             rdfs:range <https://w3id.org/def/SmartHealthCare#Sensores> ;
+             rdfs:label "measured_by" .
 
 
 #################################################################

@@ -5,88 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="14" parse.nodes="12" parse.order="free">
-      <node id="nid_NULL">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="40.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">NULL</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_https://w3id.org/def/SmartHealthCare#Cardiologist">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="490.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Cardiologist</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:someValuesFrom0" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#Cardiologist">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://w3id.org/def/SmartHealthCare#treated_by">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="470.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#treated_by</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty1" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#treated_by">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://w3id.org/def/SmartHealthCare#Doctor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="430.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Doctor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onClass2" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
+   <graph edgedefault="directed" id="G" parse.edges="16" parse.nodes="14" parse.order="free">
       <node id="nid_https://w3id.org/def/SmartHealthCare#cared_by">
          <data key="d0">
             <y:ShapeNode>
@@ -99,17 +18,41 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty3" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#cared_by">
+      <node id="nid_https://w3id.org/def/SmartHealthCare#treated_by">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="470.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#treated_by</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:propertyDisjointWith0" source="nid_https://w3id.org/def/SmartHealthCare#cared_by" target="nid_https://w3id.org/def/SmartHealthCare#treated_by">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:propertyDisjointWith</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_NULL">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="40.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">NULL</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
       <node id="nid_https://w3id.org/def/SmartHealthCare#BPSensores">
          <data key="d0">
             <y:ShapeNode>
@@ -122,7 +65,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass4" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#BPSensores">
+    <edge id="eid_owl:onClass1" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#BPSensores">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -145,7 +88,75 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty5" source="nid_NULL" target="nid_base:measured_by">
+    <edge id="eid_owl:onProperty2" source="nid_NULL" target="nid_base:measured_by">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/SmartHealthCare#Cardiologist">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="490.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Cardiologist</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom3" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#Cardiologist">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:onProperty4" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#treated_by">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://w3id.org/def/SmartHealthCare#Doctor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="430.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Doctor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onClass5" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:onProperty6" source="nid_NULL" target="nid_https://w3id.org/def/SmartHealthCare#cared_by">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -168,7 +179,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#transfer_data_to6" source="nid_https://w3id.org/def/SmartHealthCare#HealthDevices" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#transfer_data_to7" source="nid_https://w3id.org/def/SmartHealthCare#HealthDevices" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -191,7 +202,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#looks_for7" source="nid_https://w3id.org/def/SmartHealthCare#Doctor" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#looks_for8" source="nid_https://w3id.org/def/SmartHealthCare#Doctor" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -202,12 +213,47 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#treated_by8" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#treated_by9" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Doctor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#treated_by</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_base:Diseases">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="130.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Diseases</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_https://w3id.org/def/SmartHealthCare#Sensores">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="450.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Sensores</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_base:measured_by10" source="nid_base:Diseases" target="nid_https://w3id.org/def/SmartHealthCare#Sensores">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:measured_by</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -225,7 +271,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#operates_by9" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Surgeon">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#operates_by11" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Surgeon">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -248,7 +294,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#has10" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#has12" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -271,7 +317,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#cared_by11" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Nurse">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#cared_by13" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Nurse">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -282,7 +328,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#operates12" source="nid_https://w3id.org/def/SmartHealthCare#Surgeon" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#operates14" source="nid_https://w3id.org/def/SmartHealthCare#Surgeon" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -293,7 +339,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_https://w3id.org/def/SmartHealthCare#cares_for13" source="nid_https://w3id.org/def/SmartHealthCare#Nurse" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
+    <edge id="eid_https://w3id.org/def/SmartHealthCare#cares_for15" source="nid_https://w3id.org/def/SmartHealthCare#Nurse" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
