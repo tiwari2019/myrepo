@@ -99,6 +99,10 @@
                                                   rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> .
 
 
+###  https://w3id.org/def/sanjutiwari#measured_by
+:measured_by rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -353,7 +357,12 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> .
+                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://w3id.org/def/SmartHealthCare#cared_by> ;
+                                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass <https://w3id.org/def/SmartHealthCare#Doctor>
+                                                               ] .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Pharmacist
@@ -400,8 +409,8 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 <https://w3id.org/def/SmartHealthCare#Radiation_Oncologist> rdf:type owl:Class ;
                                                             rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Oncologist> ;
                                                             rdfs:comment "Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families." ;
-                                                            rdfs:label "Radiation_Oncologist" ,
-                                                                       "Radiation_Oncologist is a sub-class of Oncologist." .
+                                                            rdfs:isDefinedBy "Radiation_Oncologist is a subclass of Oncologist." ;
+                                                            rdfs:label "Radiation_Oncologist" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Record
@@ -462,6 +471,104 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                                                  rdfs:comment "Medical treatment means the management and care of a patient to combat disease or disorder." ;
                                                  rdfs:isDefinedBy "Treatment is a sub-class of Event." ;
                                                  rdfs:label "Treatment" .
+
+
+###  https://w3id.org/def/sanjutiwari#BloodPressure
+:BloodPressure rdf:type owl:Class ;
+               rdfs:subClassOf :Diseases ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :measured_by ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <https://w3id.org/def/SmartHealthCare#BPSensores>
+                               ] .
+
+
+###  https://w3id.org/def/sanjutiwari#Diseases
+:Diseases rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#HealthCare> .
+
+
+###  https://w3id.org/def/sanjutiwari#HeartDisease
+:HeartDisease rdf:type owl:Class ;
+              rdfs:subClassOf :Diseases .
+
+
+###  https://w3id.org/def/sanjutiwari#HeartPatient
+:HeartPatient rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <https://w3id.org/def/SmartHealthCare#treated_by> ;
+                                owl:someValuesFrom <https://w3id.org/def/SmartHealthCare#Cardiologist>
+                              ] .
+
+
+###  https://w3id.org/def/sanjutiwari#KidneyPatient
+:KidneyPatient rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> .
+
+
+###  https://w3id.org/def/sanjutiwari#LeverPatient
+:LeverPatient rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/sanjutiwari#Bon
+:Bon rdf:type owl:NamedIndividual ,
+              :KidneyPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Jack
+:Jack rdf:type owl:NamedIndividual ,
+               :HeartPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#John
+:John rdf:type owl:NamedIndividual ,
+               :KidneyPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Kan
+:Kan rdf:type owl:NamedIndividual ,
+              :LeverPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Rob
+:Rob rdf:type owl:NamedIndividual ,
+              :HeartPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Robin
+:Robin rdf:type owl:NamedIndividual ,
+                :HeartPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Rock
+:Rock rdf:type owl:NamedIndividual ,
+               :LeverPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Sam
+:Sam rdf:type owl:NamedIndividual ,
+              :KidneyPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Som
+:Som rdf:type owl:NamedIndividual ,
+              :LeverPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Steve
+:Steve rdf:type owl:NamedIndividual ,
+                :HeartPatient .
+
+
+###  https://w3id.org/def/sanjutiwari#Tove
+:Tove rdf:type owl:NamedIndividual ,
+               :LeverPatient .
 
 
 #################################################################

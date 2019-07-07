@@ -170,6 +170,13 @@
     
 
 
+    <!-- https://w3id.org/def/sanjutiwari#measured_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#measured_by"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -572,6 +579,13 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Patient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#cared_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -642,8 +656,8 @@
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Radiation_Oncologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Oncologist"/>
         <rdfs:comment>Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families.</rdfs:comment>
+        <rdfs:isDefinedBy>Radiation_Oncologist is a subclass of Oncologist.</rdfs:isDefinedBy>
         <rdfs:label>Radiation_Oncologist</rdfs:label>
-        <rdfs:label>Radiation_Oncologist is a sub-class of Oncologist.</rdfs:label>
     </owl:Class>
     
 
@@ -737,6 +751,184 @@
         <rdfs:isDefinedBy>Treatment is a sub-class of Event.</rdfs:isDefinedBy>
         <rdfs:label>Treatment</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#BloodPressure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#BloodPressure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/sanjutiwari#measured_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#BPSensores"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Diseases -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#Diseases">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#HeartDisease -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#HeartDisease">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#HeartPatient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#HeartPatient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/SmartHealthCare#Cardiologist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#KidneyPatient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#KidneyPatient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#LeverPatient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#LeverPatient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Bon -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Bon">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#KidneyPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Jack -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Jack">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#HeartPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#John -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#John">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#KidneyPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Kan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Kan">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#LeverPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Rob -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Rob">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#HeartPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Robin -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Robin">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#HeartPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Rock -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Rock">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#LeverPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Sam -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Sam">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#KidneyPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Som -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Som">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#LeverPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Steve -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Steve">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#HeartPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Tove -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/sanjutiwari#Tove">
+        <rdf:type rdf:resource="https://w3id.org/def/sanjutiwari#LeverPatient"/>
+    </owl:NamedIndividual>
     
 
 

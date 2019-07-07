@@ -1,4 +1,39 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#cared_by"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Cardiologist"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -463,6 +498,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
@@ -545,10 +582,11 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Radiation oncologists are health care professionals who treat cancers and tumors through radiation therapy. Radiation oncologists must be able to handle difficult emotional situations involving cancer patients and their families."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Radiation_Oncologist is a subclass of Oncologist."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Radiation_Oncologist"
-  }, {
-    "@value" : "Radiation_Oncologist is a sub-class of Oncologist."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Oncologist"
@@ -768,4 +806,80 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.1"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#BloodPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Bon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#KidneyPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Diseases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#HeartDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#HeartPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Jack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#HeartPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#John",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#KidneyPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Kan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#KidneyPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#LeverPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Rob",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#HeartPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Robin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#HeartPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Rock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Sam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#KidneyPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Som",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Steve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#HeartPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Tove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#measured_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
