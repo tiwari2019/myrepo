@@ -586,6 +586,9 @@
                 <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A person who needs treatment.</rdfs:comment>
+        <rdfs:isDefinedBy>Patient is a subclass of Actor.</rdfs:isDefinedBy>
+        <rdfs:label>Patient</rdfs:label>
     </owl:Class>
     
 
@@ -766,6 +769,8 @@
                 <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#BPSensores"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:isDefinedBy>BloodPressure is a subclass of Disease.</rdfs:isDefinedBy>
+        <rdfs:label>BloodPressure</rdfs:label>
     </owl:Class>
     
 
@@ -775,6 +780,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#Diseases">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:comment>It is a cause who makes person abnormal.</rdfs:comment>
+        <rdfs:isDefinedBy>Disease is a subclassof  Healthcare.</rdfs:isDefinedBy>
+        <rdfs:label>Disease</rdfs:label>
     </owl:Class>
     
 
@@ -784,6 +792,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#HeartDisease">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+        <rdfs:isDefinedBy>HeartDisease is a subclass of Disease.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -799,6 +808,9 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/SmartHealthCare#Cardiologist"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A patient suffering from heart diseases.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a subclass of Patient</rdfs:isDefinedBy>
+        <rdfs:label>HeartPatient</rdfs:label>
     </owl:Class>
     
 
@@ -808,6 +820,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#KidneyPatient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>A patient suffering from Kidney problems.</rdfs:comment>
+        <rdfs:isDefinedBy>KidneyPatient is a subclass of Patient.</rdfs:isDefinedBy>
+        <rdfs:label>KidneyPatient</rdfs:label>
     </owl:Class>
     
 
@@ -817,6 +832,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#LeverPatient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>A patient suffering from lever problem.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a subclass of Patient.</rdfs:isDefinedBy>
+        <rdfs:label>LeverPatient</rdfs:label>
     </owl:Class>
     
 

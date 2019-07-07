@@ -362,7 +362,10 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                                                                  owl:onProperty <https://w3id.org/def/SmartHealthCare#cared_by> ;
                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                  owl:onClass <https://w3id.org/def/SmartHealthCare#Doctor>
-                                                               ] .
+                                                               ] ;
+                                               rdfs:comment "A person who needs treatment." ;
+                                               rdfs:isDefinedBy "Patient is a subclass of Actor." ;
+                                               rdfs:label "Patient" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#Pharmacist
@@ -480,17 +483,23 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                                  owl:onProperty :measured_by ;
                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass <https://w3id.org/def/SmartHealthCare#BPSensores>
-                               ] .
+                               ] ;
+               rdfs:isDefinedBy "BloodPressure is a subclass of Disease." ;
+               rdfs:label "BloodPressure" .
 
 
 ###  https://w3id.org/def/sanjutiwari#Diseases
 :Diseases rdf:type owl:Class ;
-          rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#HealthCare> .
+          rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#HealthCare> ;
+          rdfs:comment "It is a cause who makes person abnormal." ;
+          rdfs:isDefinedBy "Disease is a subclassof  Healthcare." ;
+          rdfs:label "Disease" .
 
 
 ###  https://w3id.org/def/sanjutiwari#HeartDisease
 :HeartDisease rdf:type owl:Class ;
-              rdfs:subClassOf :Diseases .
+              rdfs:subClassOf :Diseases ;
+              rdfs:isDefinedBy "HeartDisease is a subclass of Disease." .
 
 
 ###  https://w3id.org/def/sanjutiwari#HeartPatient
@@ -499,17 +508,26 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <https://w3id.org/def/SmartHealthCare#treated_by> ;
                                 owl:someValuesFrom <https://w3id.org/def/SmartHealthCare#Cardiologist>
-                              ] .
+                              ] ;
+              rdfs:comment "A patient suffering from heart diseases." ;
+              rdfs:isDefinedBy "It is a subclass of Patient" ;
+              rdfs:label "HeartPatient" .
 
 
 ###  https://w3id.org/def/sanjutiwari#KidneyPatient
 :KidneyPatient rdf:type owl:Class ;
-               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> .
+               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> ;
+               rdfs:comment "A patient suffering from Kidney problems." ;
+               rdfs:isDefinedBy "KidneyPatient is a subclass of Patient." ;
+               rdfs:label "KidneyPatient" .
 
 
 ###  https://w3id.org/def/sanjutiwari#LeverPatient
 :LeverPatient rdf:type owl:Class ;
-              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> .
+              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Patient> ;
+              rdfs:comment "A patient suffering from lever problem." ;
+              rdfs:isDefinedBy "It is a subclass of Patient." ;
+              rdfs:label "LeverPatient" .
 
 
 #################################################################
