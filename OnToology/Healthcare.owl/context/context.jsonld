@@ -28,6 +28,9 @@
       "@id" : "https://w3id.org/def/SmartHealthCare#operates",
       "@type" : "@id"
     },
+    "HeartPatient" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#HeartPatient"
+    },
     "Organization" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
     },
@@ -51,6 +54,9 @@
     },
     "Doctor" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+    },
+    "Diseases" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
     },
     "Cardiologist" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Cardiologist"
@@ -79,6 +85,9 @@
     "Sympotoms" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
     },
+    "BloodPressure" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#BloodPressure"
+    },
     "Patient" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
     },
@@ -106,6 +115,9 @@
     "RFID" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#RFID"
     },
+    "LeverPatient" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#LeverPatient"
+    },
     "HealthCare" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
     },
@@ -117,6 +129,9 @@
     },
     "Surgeon" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon"
+    },
+    "HeartDisease" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#HeartDisease"
     },
     "Fever" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Fever"
@@ -179,8 +194,15 @@
       "@id" : "https://w3id.org/def/SmartHealthCare#has",
       "@type" : "@id"
     },
+    "KidneyPatient" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#KidneyPatient"
+    },
     "MedicalRecord" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#MedicalRecord"
+    },
+    "measured_by" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#measured_by",
+      "@type" : "@id"
     },
     "Manager" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Manager"
