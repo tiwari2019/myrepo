@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="53" parse.nodes="55" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="54" parse.nodes="55" parse.order="free">
       <node id="nid_base:KidneyPatient">
          <data key="d0">
             <y:ShapeNode>
@@ -343,6 +343,64 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_owl:Thing">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf11" source="nid_https://w3id.org/def/SmartHealthCare#HealthDevices" target="nid_owl:Thing">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_base:Doctor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:Doctor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_https://w3id.org/def/SmartHealthCare#Actor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Actor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf12" source="nid_base:Doctor" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist">
          <data key="d0">
             <y:ShapeNode>
@@ -355,7 +413,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
+    <edge id="eid_rdfs:subClassOf13" source="nid_https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -378,19 +436,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_https://w3id.org/def/SmartHealthCare#Actor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Actor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_https://w3id.org/def/SmartHealthCare#Surgeon" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf14" source="nid_https://w3id.org/def/SmartHealthCare#Surgeon" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -425,30 +471,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_https://w3id.org/def/SmartHealthCare#Cardiologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://w3id.org/def/SmartHealthCare#Doctor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="430.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/SmartHealthCare#Doctor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_https://w3id.org/def/SmartHealthCare#Doctor" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf15" source="nid_https://w3id.org/def/SmartHealthCare#Cardiologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -483,7 +506,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_base:HeartDisease" target="nid_base:Diseases">
+    <edge id="eid_rdfs:subClassOf16" source="nid_base:HeartDisease" target="nid_base:Diseases">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -506,19 +529,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_owl:Thing">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_https://w3id.org/def/SmartHealthCare#HealthProvider" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf17" source="nid_https://w3id.org/def/SmartHealthCare#HealthProvider" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -541,7 +552,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_https://w3id.org/def/SmartHealthCare#HealthCare" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf18" source="nid_https://w3id.org/def/SmartHealthCare#HealthCare" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -576,7 +587,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_https://w3id.org/def/SmartHealthCare#Treatment" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf19" source="nid_https://w3id.org/def/SmartHealthCare#Treatment" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -599,7 +610,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_https://w3id.org/def/SmartHealthCare#CommunityPharmacist" target="nid_https://w3id.org/def/SmartHealthCare#Pharmacist">
+    <edge id="eid_rdfs:subClassOf20" source="nid_https://w3id.org/def/SmartHealthCare#CommunityPharmacist" target="nid_https://w3id.org/def/SmartHealthCare#Pharmacist">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -634,7 +645,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_https://w3id.org/def/SmartHealthCare#Hospital" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
+    <edge id="eid_rdfs:subClassOf21" source="nid_https://w3id.org/def/SmartHealthCare#Hospital" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -657,7 +668,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_https://w3id.org/def/SmartHealthCare#Referral" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf22" source="nid_https://w3id.org/def/SmartHealthCare#Referral" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -680,7 +691,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_https://w3id.org/def/SmartHealthCare#Insurance" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
+    <edge id="eid_rdfs:subClassOf23" source="nid_https://w3id.org/def/SmartHealthCare#Insurance" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -703,7 +714,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_base:LeverPatient" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
+    <edge id="eid_rdfs:subClassOf24" source="nid_base:LeverPatient" target="nid_https://w3id.org/def/SmartHealthCare#Patient">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -714,7 +725,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf24" source="nid_https://w3id.org/def/SmartHealthCare#Organization" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
+    <edge id="eid_rdfs:subClassOf25" source="nid_https://w3id.org/def/SmartHealthCare#Organization" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -737,7 +748,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_https://w3id.org/def/SmartHealthCare#ChestPain" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
+    <edge id="eid_rdfs:subClassOf26" source="nid_https://w3id.org/def/SmartHealthCare#ChestPain" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -760,7 +771,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf26" source="nid_https://w3id.org/def/SmartHealthCare#Diagnosis" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf27" source="nid_https://w3id.org/def/SmartHealthCare#Diagnosis" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -783,7 +794,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_base:BloodPressure" target="nid_base:Diseases">
+    <edge id="eid_rdfs:subClassOf28" source="nid_base:BloodPressure" target="nid_base:Diseases">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -806,7 +817,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_https://w3id.org/def/SmartHealthCare#Administrator" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf29" source="nid_https://w3id.org/def/SmartHealthCare#Administrator" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -817,7 +828,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf29" source="nid_https://w3id.org/def/SmartHealthCare#Physician" target="nid_https://w3id.org/def/SmartHealthCare#HealthProvider">
+    <edge id="eid_rdfs:subClassOf30" source="nid_https://w3id.org/def/SmartHealthCare#Physician" target="nid_https://w3id.org/def/SmartHealthCare#HealthProvider">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -840,7 +851,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf30" source="nid_https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
+    <edge id="eid_rdfs:subClassOf31" source="nid_https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#ClinicalPharmacist">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -851,7 +862,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf31" source="nid_https://w3id.org/def/SmartHealthCare#Sensores" target="nid_https://w3id.org/def/SmartHealthCare#HealthDevices">
+    <edge id="eid_rdfs:subClassOf32" source="nid_https://w3id.org/def/SmartHealthCare#Sensores" target="nid_https://w3id.org/def/SmartHealthCare#HealthDevices">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -862,7 +873,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf32" source="nid_https://w3id.org/def/SmartHealthCare#Record" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
+    <edge id="eid_rdfs:subClassOf33" source="nid_https://w3id.org/def/SmartHealthCare#Record" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -873,7 +884,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf33" source="nid_base:Diseases" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
+    <edge id="eid_rdfs:subClassOf34" source="nid_base:Diseases" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -896,7 +907,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_https://w3id.org/def/SmartHealthCare#Nurse" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf35" source="nid_https://w3id.org/def/SmartHealthCare#Nurse" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -907,7 +918,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf35" source="nid_https://w3id.org/def/SmartHealthCare#Event" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
+    <edge id="eid_rdfs:subClassOf36" source="nid_https://w3id.org/def/SmartHealthCare#Event" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -930,7 +941,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_https://w3id.org/def/SmartHealthCare#Actuators" target="nid_https://w3id.org/def/SmartHealthCare#HealthDevices">
+    <edge id="eid_rdfs:subClassOf37" source="nid_https://w3id.org/def/SmartHealthCare#Actuators" target="nid_https://w3id.org/def/SmartHealthCare#HealthDevices">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -953,7 +964,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf37" source="nid_https://w3id.org/def/SmartHealthCare#Headache" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
+    <edge id="eid_rdfs:subClassOf38" source="nid_https://w3id.org/def/SmartHealthCare#Headache" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -964,7 +975,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf38" source="nid_https://w3id.org/def/SmartHealthCare#Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#HealthProvider">
+    <edge id="eid_rdfs:subClassOf39" source="nid_https://w3id.org/def/SmartHealthCare#Pharmacist" target="nid_https://w3id.org/def/SmartHealthCare#HealthProvider">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -975,7 +986,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf39" source="nid_https://w3id.org/def/SmartHealthCare#Actor" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
+    <edge id="eid_rdfs:subClassOf40" source="nid_https://w3id.org/def/SmartHealthCare#Actor" target="nid_https://w3id.org/def/SmartHealthCare#HealthCare">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -998,7 +1009,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf40" source="nid_https://w3id.org/def/SmartHealthCare#GeneralPractice" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
+    <edge id="eid_rdfs:subClassOf41" source="nid_https://w3id.org/def/SmartHealthCare#GeneralPractice" target="nid_https://w3id.org/def/SmartHealthCare#Organization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1021,7 +1032,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_https://w3id.org/def/SmartHealthCare#Manager" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf42" source="nid_https://w3id.org/def/SmartHealthCare#Manager" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1044,7 +1055,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_https://w3id.org/def/SmartHealthCare#Surgery" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf43" source="nid_https://w3id.org/def/SmartHealthCare#Surgery" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1067,7 +1078,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf43" source="nid_https://w3id.org/def/SmartHealthCare#HeartbeatSensors" target="nid_https://w3id.org/def/SmartHealthCare#Sensores">
+    <edge id="eid_rdfs:subClassOf44" source="nid_https://w3id.org/def/SmartHealthCare#HeartbeatSensors" target="nid_https://w3id.org/def/SmartHealthCare#Sensores">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1078,7 +1089,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf44" source="nid_https://w3id.org/def/SmartHealthCare#Oncologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
+    <edge id="eid_rdfs:subClassOf45" source="nid_https://w3id.org/def/SmartHealthCare#Oncologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1101,7 +1112,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf45" source="nid_https://w3id.org/def/SmartHealthCare#TemperatureSensors" target="nid_https://w3id.org/def/SmartHealthCare#Sensores">
+    <edge id="eid_rdfs:subClassOf46" source="nid_https://w3id.org/def/SmartHealthCare#TemperatureSensors" target="nid_https://w3id.org/def/SmartHealthCare#Sensores">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1124,7 +1135,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_https://w3id.org/def/SmartHealthCare#Consultation" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf47" source="nid_https://w3id.org/def/SmartHealthCare#Consultation" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1147,7 +1158,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf47" source="nid_https://w3id.org/def/SmartHealthCare#Pulmonologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
+    <edge id="eid_rdfs:subClassOf48" source="nid_https://w3id.org/def/SmartHealthCare#Pulmonologist" target="nid_https://w3id.org/def/SmartHealthCare#Physician">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1158,7 +1169,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf48" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
+    <edge id="eid_rdfs:subClassOf49" source="nid_https://w3id.org/def/SmartHealthCare#Patient" target="nid_https://w3id.org/def/SmartHealthCare#Actor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1181,7 +1192,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf49" source="nid_https://w3id.org/def/SmartHealthCare#Radiation_Oncologist" target="nid_https://w3id.org/def/SmartHealthCare#Oncologist">
+    <edge id="eid_rdfs:subClassOf50" source="nid_https://w3id.org/def/SmartHealthCare#Radiation_Oncologist" target="nid_https://w3id.org/def/SmartHealthCare#Oncologist">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1192,7 +1203,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf50" source="nid_https://w3id.org/def/SmartHealthCare#Sympotoms" target="nid_https://w3id.org/def/SmartHealthCare#Event">
+    <edge id="eid_rdfs:subClassOf51" source="nid_https://w3id.org/def/SmartHealthCare#Sympotoms" target="nid_https://w3id.org/def/SmartHealthCare#Event">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1215,7 +1226,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf51" source="nid_https://w3id.org/def/SmartHealthCare#Body_Temp" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
+    <edge id="eid_rdfs:subClassOf52" source="nid_https://w3id.org/def/SmartHealthCare#Body_Temp" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1238,7 +1249,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf52" source="nid_https://w3id.org/def/SmartHealthCare#Fever" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
+    <edge id="eid_rdfs:subClassOf53" source="nid_https://w3id.org/def/SmartHealthCare#Fever" target="nid_https://w3id.org/def/SmartHealthCare#Sympotoms">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

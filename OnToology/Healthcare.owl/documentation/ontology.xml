@@ -92,8 +92,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#cares_for"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
-        <owl:propertyDisjointWith rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
         <rdfs:comment>Property for Patient</rdfs:comment>
+        <rdfs:isDefinedBy>It is an object proprty.</rdfs:isDefinedBy>
         <rdfs:label>cared_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -106,6 +106,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:comment>A property for Doctors</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>cares_for</rdfs:label>
     </owl:ObjectProperty>
     
@@ -117,6 +118,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#has">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:comment>Property to contain.</rdfs:comment>
+        <rdfs:isDefinedBy>An Objectproperty.</rdfs:isDefinedBy>
         <rdfs:label>has</rdfs:label>
     </owl:ObjectProperty>
     
@@ -126,9 +129,10 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#looks_for">
-        <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>Propert to look patients</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>looks_for</rdfs:label>
     </owl:ObjectProperty>
     
@@ -141,6 +145,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#operates_by"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>Property for operator.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>operates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -152,6 +158,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#operates_by">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Surgeon"/>
+        <rdfs:comment>Property to operate by doctor.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>operates_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -162,9 +170,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#transfer_data_to">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Nurse"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>Property to transfer data.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>transfer_data_to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -175,7 +183,9 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#treated_by">
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
+        <rdfs:comment>Property for treatment.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>treated_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -187,6 +197,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#measured_by">
         <rdfs:domain rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:comment>Property to measure.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>measured_by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -243,6 +255,7 @@
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Administrator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>Administrators are responsible for the day-to-day operation of a hospital.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a Subclass of Actor</rdfs:isDefinedBy>
         <rdfs:label>Administrator</rdfs:label>
     </owl:Class>
     
@@ -356,17 +369,6 @@
     
 
 
-    <!-- https://w3id.org/def/SmartHealthCare#Doctor -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Doctor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
-        <rdfs:comment>Doctor examine, diagnose and treat patients who&apos;ve been referred to the hospital by health professionals</rdfs:comment>
-        <rdfs:label>Doctor</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/SmartHealthCare#DoctorsPrescription -->
 
 
@@ -442,6 +444,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthDevices">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life.</rdfs:comment>
         <rdfs:isDefinedBy>HealthDevices is a sub-class</rdfs:isDefinedBy>
         <rdfs:label>HealthDevices</rdfs:label>
@@ -454,8 +457,8 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthProvider">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>HealthProvider</rdfs:comment>
         <rdfs:comment>Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO.</rdfs:comment>
+        <rdfs:label>HealthProvider</rdfs:label>
     </owl:Class>
     
 
@@ -526,6 +529,7 @@
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Manager">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>To manage the things.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a Subclass of Actor</rdfs:isDefinedBy>
         <rdfs:label>Manager</rdfs:label>
     </owl:Class>
     
@@ -561,6 +565,7 @@
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Nurse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>Nurse is for caring the people.</rdfs:comment>
+        <rdfs:isDefinedBy>Subclass of Actor</rdfs:isDefinedBy>
         <rdfs:label>Nurse</rdfs:label>
     </owl:Class>
     
@@ -607,13 +612,6 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Patient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#cared_by"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/def/SmartHealthCare#Doctor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A person who needs treatment.</rdfs:comment>
         <rdfs:isDefinedBy>Patient is a subclass of Actor.</rdfs:isDefinedBy>
         <rdfs:label>Patient</rdfs:label>
@@ -649,6 +647,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Physician">
+        <owl:equivalentClass rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#HealthProvider"/>
         <rdfs:comment>A physician, medical practitioner, medical doctor, or simply doctor, is a professional who practises medicine, which is concerned with promoting, maintaining, or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments.</rdfs:comment>
         <rdfs:isDefinedBy>Physician is  a sub-class of HealthProvider.</rdfs:isDefinedBy>
@@ -735,6 +734,7 @@
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Surgeon">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>A person to do surgery of patients.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a Subclass of Actor</rdfs:isDefinedBy>
         <rdfs:label>Surgeon</rdfs:label>
     </owl:Class>
     
@@ -814,6 +814,18 @@
         <rdfs:comment>It is a cause who makes person abnormal.</rdfs:comment>
         <rdfs:isDefinedBy>Disease is a subclassof  Healthcare.</rdfs:isDefinedBy>
         <rdfs:label>Diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#Doctor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/sanjutiwari#Doctor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:comment>A person for the treatment of Patients.</rdfs:comment>
+        <rdfs:isDefinedBy>It is a Subclass of Actor</rdfs:isDefinedBy>
+        <rdfs:label>Doctor</rdfs:label>
     </owl:Class>
     
 
