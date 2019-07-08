@@ -393,7 +393,12 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
+                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <https://w3id.org/def/SmartHealthCare#cared_by> ;
+                                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :Doctor
+                                                               ] ;
                                                rdfs:comment "A person who needs treatment." ;
                                                rdfs:isDefinedBy "Patient is a subclass of Actor." ;
                                                rdfs:label "Patient" .

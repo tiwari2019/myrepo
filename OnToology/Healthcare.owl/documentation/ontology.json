@@ -6,13 +6,26 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#cared_by"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
@@ -534,6 +547,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
@@ -932,7 +947,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
   }, {
-    "@id" : "_:genid1"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Bon",
@@ -997,7 +1012,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Jack",
