@@ -562,6 +562,13 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Patient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#cared_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A person who needs treatment.</rdfs:comment>
         <rdfs:isDefinedBy>Patient is a subclass of Actor.</rdfs:isDefinedBy>
         <rdfs:label>Patient</rdfs:label>
