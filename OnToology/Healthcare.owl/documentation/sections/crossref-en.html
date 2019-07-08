@@ -51,7 +51,7 @@ This section provides details for each class and property defined by Smart Healt
          <a href="#https://w3id.org/def/sanjutiwari#Diseases" title="https://w3id.org/def/sanjutiwari#Diseases">Diseases</a>
       </li>
       <li>
-         <a href="#Doctor" title="https://w3id.org/def/SmartHealthCare#Doctor">Doctor</a>
+         <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
       </li>
       <li>
          <a href="#DoctorsPrescription"
@@ -71,17 +71,15 @@ This section provides details for each class and property defined by Smart Healt
          <a href="#Headache" title="https://w3id.org/def/SmartHealthCare#Headache">Headache</a>
       </li>
       <li>
-         <a href="#HealthProvider"
-            title="https://w3id.org/def/SmartHealthCare#HealthProvider">
-            <span>health provider</span>
-         </a>
-      </li>
-      <li>
          <a href="#HealthCare" title="https://w3id.org/def/SmartHealthCare#HealthCare">HealthCare</a>
       </li>
       <li>
          <a href="#HealthDevices"
             title="https://w3id.org/def/SmartHealthCare#HealthDevices">HealthDevices</a>
+      </li>
+      <li>
+         <a href="#HealthProvider"
+            title="https://w3id.org/def/SmartHealthCare#HealthProvider">HealthProvider</a>
       </li>
       <li>
          <a href="#HeartBeat" title="https://w3id.org/def/SmartHealthCare#HeartBeat">HeartBeat</a>
@@ -211,12 +209,18 @@ This section provides details for each class and property defined by Smart Healt
          <dd>
             <a href="#Administrator"
                title="https://w3id.org/def/SmartHealthCare#Administrator">Administrator</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Doctor" title="https://w3id.org/def/SmartHealthCare#Doctor">Doctor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Manager" title="https://w3id.org/def/SmartHealthCare#Manager">Manager</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Nurse" title="https://w3id.org/def/SmartHealthCare#Nurse">Nurse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Surgeon" title="https://w3id.org/def/SmartHealthCare#Surgeon">Surgeon</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#transfer_data_to"
+               title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -253,6 +257,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">Administrators are responsible for the day-to-day operation of a hospital.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -522,16 +530,20 @@ This section provides details for each class and property defined by Smart Healt
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Doctor">
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#Doctor">
       <h3>Doctor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#Doctor</p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#Doctor</p>
       <div class="comment">
-         <span class="markdown">Doctor examine, diagnose and treat patients who've been referred to the hospital by health professionals</span>
+         <span class="markdown">A person for the treatment of Patients.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -545,9 +557,7 @@ This section provides details for each class and property defined by Smart Healt
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#transfer_data_to"
-               title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#treated_by" title="https://w3id.org/def/SmartHealthCare#treated_by">treated_by</a>
+            <a href="#treated_by" title="https://w3id.org/def/SmartHealthCare#treated_by">treated_by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -674,30 +684,6 @@ This section provides details for each class and property defined by Smart Healt
          </dd>
       </dl>
    </div>
-   <div class="entity" id="HealthProvider">
-      <h3>health provider<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#HealthProvider</p>
-      <div class="comment">
-         <span class="markdown">HealthProvider</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Pharmacist" title="https://w3id.org/def/SmartHealthCare#Pharmacist">Pharmacist</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Physician" title="https://w3id.org/def/SmartHealthCare#Physician">Physician</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="HealthCare">
       <h3>HealthCare<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -741,6 +727,11 @@ This section provides details for each class and property defined by Smart Healt
          <dd>https://w3id.org/def/SmartHealthCare</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Actuators" title="https://w3id.org/def/SmartHealthCare#Actuators">Actuators</a>
@@ -753,6 +744,30 @@ This section provides details for each class and property defined by Smart Healt
             <a href="#transfer_data_to"
                title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HealthProvider">
+      <h3>HealthProvider<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#HealthProvider</p>
+      <div class="comment">
+         <span class="markdown">Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Pharmacist" title="https://w3id.org/def/SmartHealthCare#Pharmacist">Pharmacist</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Physician" title="https://w3id.org/def/SmartHealthCare#Physician">Physician</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -989,6 +1004,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">To manage the things.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1051,6 +1070,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">Nurse is for caring the people.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1065,8 +1088,6 @@ This section provides details for each class and property defined by Smart Healt
          <dt>is in range of</dt>
          <dd>
             <a href="#cared_by" title="https://w3id.org/def/SmartHealthCare#cared_by">cared_by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transfer_data_to"
-               title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1194,8 +1215,6 @@ This section provides details for each class and property defined by Smart Healt
             <a href="#cares_for" title="https://w3id.org/def/SmartHealthCare#cares_for">cares_for</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#looks_for" title="https://w3id.org/def/SmartHealthCare#looks_for">looks_for</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#operates" title="https://w3id.org/def/SmartHealthCare#operates">operates</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transfer_data_to"
-               title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1218,7 +1237,7 @@ This section provides details for each class and property defined by Smart Healt
          <dt>has super-classes</dt>
          <dd>
             <a href="#HealthProvider"
-               title="https://w3id.org/def/SmartHealthCare#HealthProvider">health provider</a>
+               title="https://w3id.org/def/SmartHealthCare#HealthProvider">HealthProvider</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1269,10 +1288,15 @@ This section provides details for each class and property defined by Smart Healt
          <dd>https://w3id.org/def/SmartHealthCare</dd>
       </dl>
       <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has super-classes</dt>
          <dd>
             <a href="#HealthProvider"
-               title="https://w3id.org/def/SmartHealthCare#HealthProvider">health provider</a>
+               title="https://w3id.org/def/SmartHealthCare#HealthProvider">HealthProvider</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1454,6 +1478,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">A person to do surgery of patients.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1613,6 +1641,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">Property for Patient</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1643,6 +1675,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">A property for Doctors</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1670,6 +1706,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#has</p>
+      <div class="comment">
+         <span class="markdown">Property to contain.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1692,22 +1735,24 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#looks_for</p>
+      <div class="comment">
+         <span class="markdown">Propert to look patients</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Doctor" title="https://w3id.org/def/SmartHealthCare#Doctor">Doctor</a>
+               <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#treated_by" title="https://w3id.org/def/SmartHealthCare#treated_by">treated_by</a>
-               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1719,6 +1764,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#measured_by</p>
+      <div class="comment">
+         <span class="markdown">Property to measure.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1741,6 +1793,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#operates</p>
+      <div class="comment">
+         <span class="markdown">Property for operator.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1768,6 +1827,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#operates_by</p>
+      <div class="comment">
+         <span class="markdown">Property to operate by doctor.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1795,6 +1861,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#transfer_data_to</p>
+      <div class="comment">
+         <span class="markdown">Property to transfer data.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1805,15 +1878,7 @@ This section provides details for each class and property defined by Smart Healt
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Doctor" title="https://w3id.org/def/SmartHealthCare#Doctor">Doctor</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Nurse" title="https://w3id.org/def/SmartHealthCare#Nurse">Nurse</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
+               <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1826,6 +1891,13 @@ This section provides details for each class and property defined by Smart Healt
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/SmartHealthCare#treated_by</p>
+      <div class="comment">
+         <span class="markdown">Property for treatment.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1835,13 +1907,8 @@ This section provides details for each class and property defined by Smart Healt
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Doctor" title="https://w3id.org/def/SmartHealthCare#Doctor">Doctor</a>
+               <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#looks_for" title="https://w3id.org/def/SmartHealthCare#looks_for">looks_for</a>
-               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>

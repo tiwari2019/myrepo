@@ -6,26 +6,13 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#cared_by"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
@@ -94,6 +81,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Administrators are responsible for the day-to-day operation of a hospital."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a Subclass of Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Administrator"
@@ -237,18 +227,6 @@
     "@id" : "https://w3id.org/def/SmartHealthCare#Event"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SmartHealthCare#Doctor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Doctor examine, diagnose and treat patients who've been referred to the hospital by health professionals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Doctor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/SmartHealthCare#DoctorsPrescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -346,14 +324,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HealthDevices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "HealthProvider"
-  }, {
     "@value" : "Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HealthProvider"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -439,6 +421,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "To manage the things."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a Subclass of Actor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Manager"
   } ],
@@ -480,6 +465,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Nurse is for caring the people."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Subclass of Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Nurse"
@@ -546,8 +534,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
-  }, {
-    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
@@ -593,6 +579,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthProvider"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pulmonologist",
@@ -690,6 +679,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A person to do surgery of patients."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a Subclass of Actor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Surgeon"
   } ],
@@ -762,6 +754,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is an object proprty."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cared_by"
   } ],
@@ -770,9 +765,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#cares_for"
-  } ],
-  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#cares_for",
@@ -783,6 +775,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "cares_for"
   } ],
@@ -792,8 +787,14 @@
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#has",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property to contain."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Objectproperty."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has"
@@ -804,23 +805,32 @@
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Propert to look patients"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "looks_for"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#operates",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property for operator."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Surgeon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "operates"
@@ -834,8 +844,14 @@
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#operates_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property to operate by doctor."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "operates_by"
@@ -846,30 +862,38 @@
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#transfer_data_to",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property to transfer data."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "transfer_data_to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
-  }, {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Nurse"
-  }, {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#treated_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property for treatment."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "treated_by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari",
@@ -908,7 +932,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Bon",
@@ -927,6 +951,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person for the treatment of Patients."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "It is a Subclass of Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Doctor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#HeartDisease",
@@ -958,7 +997,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Jack",
@@ -1023,8 +1062,14 @@
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#measured_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property to measure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "measured_by"

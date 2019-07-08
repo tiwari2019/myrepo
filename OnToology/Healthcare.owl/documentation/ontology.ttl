@@ -51,8 +51,8 @@
                                                 owl:inverseOf <https://w3id.org/def/SmartHealthCare#cares_for> ;
                                                 rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Nurse> ;
-                                                owl:propertyDisjointWith <https://w3id.org/def/SmartHealthCare#treated_by> ;
                                                 rdfs:comment "Property for Patient" ;
+                                                rdfs:isDefinedBy "It is an object proprty." ;
                                                 rdfs:label "cared_by" .
 
 
@@ -61,6 +61,7 @@
                                                  rdfs:domain <https://w3id.org/def/SmartHealthCare#Nurse> ;
                                                  rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
                                                  rdfs:comment "A property for Doctors" ;
+                                                 rdfs:isDefinedBy "An Object Property." ;
                                                  rdfs:label "cares_for" .
 
 
@@ -68,14 +69,17 @@
 <https://w3id.org/def/SmartHealthCare#has> rdf:type owl:ObjectProperty ;
                                            rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
                                            rdfs:range <https://w3id.org/def/SmartHealthCare#Sympotoms> ;
+                                           rdfs:comment "Property to contain." ;
+                                           rdfs:isDefinedBy "An Objectproperty." ;
                                            rdfs:label "has" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#looks_for
 <https://w3id.org/def/SmartHealthCare#looks_for> rdf:type owl:ObjectProperty ;
-                                                 owl:inverseOf <https://w3id.org/def/SmartHealthCare#treated_by> ;
-                                                 rdfs:domain <https://w3id.org/def/SmartHealthCare#Doctor> ;
+                                                 rdfs:domain :Doctor ;
                                                  rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                 rdfs:comment "Propert to look patients" ;
+                                                 rdfs:isDefinedBy "An Object Property." ;
                                                  rdfs:label "looks_for" .
 
 
@@ -84,6 +88,8 @@
                                                 owl:inverseOf <https://w3id.org/def/SmartHealthCare#operates_by> ;
                                                 rdfs:domain <https://w3id.org/def/SmartHealthCare#Surgeon> ;
                                                 rdfs:range <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                rdfs:comment "Property for operator." ;
+                                                rdfs:isDefinedBy "An Object Property." ;
                                                 rdfs:label "operates" .
 
 
@@ -91,22 +97,26 @@
 <https://w3id.org/def/SmartHealthCare#operates_by> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
                                                    rdfs:range <https://w3id.org/def/SmartHealthCare#Surgeon> ;
+                                                   rdfs:comment "Property to operate by doctor." ;
+                                                   rdfs:isDefinedBy "An Object Property." ;
                                                    rdfs:label "operates_by" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#transfer_data_to
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> rdf:type owl:ObjectProperty ;
                                                         rdfs:domain <https://w3id.org/def/SmartHealthCare#HealthDevices> ;
-                                                        rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> ,
-                                                                   <https://w3id.org/def/SmartHealthCare#Nurse> ,
-                                                                   <https://w3id.org/def/SmartHealthCare#Patient> ;
+                                                        rdfs:range <https://w3id.org/def/SmartHealthCare#Actor> ;
+                                                        rdfs:comment "Property to transfer data." ;
+                                                        rdfs:isDefinedBy "An Object Property." ;
                                                         rdfs:label "transfer_data_to" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#treated_by
 <https://w3id.org/def/SmartHealthCare#treated_by> rdf:type owl:ObjectProperty ;
                                                   rdfs:domain <https://w3id.org/def/SmartHealthCare#Patient> ;
-                                                  rdfs:range <https://w3id.org/def/SmartHealthCare#Doctor> ;
+                                                  rdfs:range :Doctor ;
+                                                  rdfs:comment "Property for treatment." ;
+                                                  rdfs:isDefinedBy "An Object Property." ;
                                                   rdfs:label "treated_by" .
 
 
@@ -114,6 +124,8 @@
 :measured_by rdf:type owl:ObjectProperty ;
              rdfs:domain :Diseases ;
              rdfs:range <https://w3id.org/def/SmartHealthCare#Sensores> ;
+             rdfs:comment "Property to measure." ;
+             rdfs:isDefinedBy "An Object Property." ;
              rdfs:label "measured_by" .
 
 
@@ -145,6 +157,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 <https://w3id.org/def/SmartHealthCare#Administrator> rdf:type owl:Class ;
                                                      rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
                                                      rdfs:comment "Administrators are responsible for the day-to-day operation of a hospital." ;
+                                                     rdfs:isDefinedBy "It is a Subclass of Actor" ;
                                                      rdfs:label "Administrator" .
 
 
@@ -220,13 +233,6 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
                                                  rdfs:label "Diagnosis" .
 
 
-###  https://w3id.org/def/SmartHealthCare#Doctor
-<https://w3id.org/def/SmartHealthCare#Doctor> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
-                                              rdfs:comment "Doctor examine, diagnose and treat patients who've been referred to the hospital by health professionals" ;
-                                              rdfs:label "Doctor" .
-
-
 ###  https://w3id.org/def/SmartHealthCare#DoctorsPrescription
 <https://w3id.org/def/SmartHealthCare#DoctorsPrescription> rdf:type owl:Class ;
                                                            rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Record> ;
@@ -276,6 +282,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#HealthDevices
 <https://w3id.org/def/SmartHealthCare#HealthDevices> rdf:type owl:Class ;
+                                                     rdfs:subClassOf owl:Thing ;
                                                      rdfs:comment "A medical device is any device intended to be used for medical purposes. ... Medical devices benefit patients by helping health care providers diagnose and treat patients and helping patients overcome sickness or disease, improving their quality of life." ;
                                                      rdfs:isDefinedBy "HealthDevices is a sub-class" ;
                                                      rdfs:label "HealthDevices" .
@@ -284,8 +291,8 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 ###  https://w3id.org/def/SmartHealthCare#HealthProvider
 <https://w3id.org/def/SmartHealthCare#HealthProvider> rdf:type owl:Class ;
                                                       rdfs:subClassOf owl:Thing ;
-                                                      rdfs:comment "HealthProvider" ,
-                                                                   "Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO." .
+                                                      rdfs:comment "Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO." ;
+                                                      rdfs:label "HealthProvider" .
 
 
 ###  https://w3id.org/def/SmartHealthCare#HeartBeat
@@ -332,6 +339,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 <https://w3id.org/def/SmartHealthCare#Manager> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
                                                rdfs:comment "To manage the things." ;
+                                               rdfs:isDefinedBy "It is a Subclass of Actor" ;
                                                rdfs:label "Manager" .
 
 
@@ -355,6 +363,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 <https://w3id.org/def/SmartHealthCare#Nurse> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
                                              rdfs:comment "Nurse is for caring the people." ;
+                                             rdfs:isDefinedBy "Subclass of Actor" ;
                                              rdfs:label "Nurse" .
 
 
@@ -384,12 +393,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/def/SmartHealthCare#cared_by> ;
-                                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <https://w3id.org/def/SmartHealthCare#Doctor>
-                                                               ] ;
+                                               rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
                                                rdfs:comment "A person who needs treatment." ;
                                                rdfs:isDefinedBy "Patient is a subclass of Actor." ;
                                                rdfs:label "Patient" .
@@ -413,6 +417,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 
 ###  https://w3id.org/def/SmartHealthCare#Physician
 <https://w3id.org/def/SmartHealthCare#Physician> rdf:type owl:Class ;
+                                                 owl:equivalentClass :Doctor ;
                                                  rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#HealthProvider> ;
                                                  rdfs:comment "A physician, medical practitioner, medical doctor, or simply doctor, is a professional who practises medicine, which is concerned with promoting, maintaining, or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments." ;
                                                  rdfs:isDefinedBy "Physician is  a sub-class of HealthProvider." ;
@@ -471,6 +476,7 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
 <https://w3id.org/def/SmartHealthCare#Surgeon> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
                                                rdfs:comment "A person to do surgery of patients." ;
+                                               rdfs:isDefinedBy "It is a Subclass of Actor" ;
                                                rdfs:label "Surgeon" .
 
 
@@ -524,6 +530,14 @@ owl:Thing rdfs:isDefinedBy "Health Care Ontology" .
           rdfs:comment "It is a cause who makes person abnormal." ;
           rdfs:isDefinedBy "Disease is a subclassof  Healthcare." ;
           rdfs:label "Diseases" .
+
+
+###  https://w3id.org/def/sanjutiwari#Doctor
+:Doctor rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/def/SmartHealthCare#Actor> ;
+        rdfs:comment "A person for the treatment of Patients." ;
+        rdfs:isDefinedBy "It is a Subclass of Actor" ;
+        rdfs:label "Doctor" .
 
 
 ###  https://w3id.org/def/sanjutiwari#HeartDisease

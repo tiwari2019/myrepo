@@ -53,7 +53,7 @@
       "@id" : "https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist"
     },
     "Doctor" : {
-      "@id" : "https://w3id.org/def/SmartHealthCare#Doctor"
+      "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
     },
     "Diseases" : {
       "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
