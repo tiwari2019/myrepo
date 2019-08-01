@@ -210,11 +210,18 @@ This section provides details for each class and property defined by Smart Healt
             <a href="#Administrator"
                title="https://w3id.org/def/SmartHealthCare#Administrator">Administrator</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HealthProvider"
+               title="https://w3id.org/def/SmartHealthCare#HealthProvider">HealthProvider</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Manager" title="https://w3id.org/def/SmartHealthCare#Manager">Manager</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Nurse" title="https://w3id.org/def/SmartHealthCare#Nurse">Nurse</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Surgeon" title="https://w3id.org/def/SmartHealthCare#Surgeon">Surgeon</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#recieved_data" title="https://w3id.org/def/sanjutiwari#recieved_data">received_data</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -528,6 +535,11 @@ This section provides details for each class and property defined by Smart Healt
             <a href="#https://w3id.org/def/sanjutiwari#measured_by" title="https://w3id.org/def/sanjutiwari#measured_by">measured_by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#has_measured" title="https://w3id.org/def/sanjutiwari#has_measured">has_measured</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/sanjutiwari#Doctor">
@@ -548,6 +560,11 @@ This section provides details for each class and property defined by Smart Healt
          <dt>has super-classes</dt>
          <dd>
             <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Oncologist" title="https://w3id.org/def/SmartHealthCare#Oncologist">Oncologist</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -694,6 +711,10 @@ This section provides details for each class and property defined by Smart Healt
       <div class="comment">
          <span class="markdown">A class for health care objects.</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -708,6 +729,22 @@ This section provides details for each class and property defined by Smart Healt
             <sup class="type-c" title="class">c</sup>, <a href="#Organization"
                title="https://w3id.org/def/SmartHealthCare#Organization">Organization</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Record" title="https://w3id.org/def/SmartHealthCare#Record">Record</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#managed_by" title="https://w3id.org/def/sanjutiwari#managed_by">managed_by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#has_manage" title="https://w3id.org/def/sanjutiwari#has_manage">has_manage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#HealthDevices"
+               title="https://w3id.org/def/SmartHealthCare#HealthDevices">HealthDevices</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -745,6 +782,16 @@ This section provides details for each class and property defined by Smart Healt
                title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#recieved_data" title="https://w3id.org/def/sanjutiwari#recieved_data">received_data</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#HealthCare" title="https://w3id.org/def/SmartHealthCare#HealthCare">HealthCare</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="HealthProvider">
@@ -760,7 +807,7 @@ This section provides details for each class and property defined by Smart Healt
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1109,7 +1156,8 @@ This section provides details for each class and property defined by Smart Healt
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Physician" title="https://w3id.org/def/SmartHealthCare#Physician">Physician</a>
+            <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Physician" title="https://w3id.org/def/SmartHealthCare#Physician">Physician</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1173,6 +1221,16 @@ This section provides details for each class and property defined by Smart Healt
             <sup class="type-c" title="class">c</sup>, <a href="#Insurance" title="https://w3id.org/def/SmartHealthCare#Insurance">Insurance</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#has_manage" title="https://w3id.org/def/sanjutiwari#has_manage">has_manage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#managed_by" title="https://w3id.org/def/sanjutiwari#managed_by">managed_by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Patient">
@@ -1213,6 +1271,7 @@ This section provides details for each class and property defined by Smart Healt
          <dt>is in range of</dt>
          <dd>
             <a href="#cares_for" title="https://w3id.org/def/SmartHealthCare#cares_for">cares_for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/sanjutiwari#found_in" title="https://w3id.org/def/sanjutiwari#found_in">found_in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#looks_for" title="https://w3id.org/def/SmartHealthCare#looks_for">looks_for</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#operates" title="https://w3id.org/def/SmartHealthCare#operates">operates</a>
             <sup class="type-op" title="object property">op</sup>
@@ -1461,6 +1520,11 @@ This section provides details for each class and property defined by Smart Healt
                title="https://w3id.org/def/SmartHealthCare#TemperatureSensors">Temperature Sensors</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#has_measured" title="https://w3id.org/def/sanjutiwari#has_measured">has_measured</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#https://w3id.org/def/sanjutiwari#measured_by" title="https://w3id.org/def/sanjutiwari#measured_by">measured_by</a>
@@ -1552,6 +1616,11 @@ This section provides details for each class and property defined by Smart Healt
             <sup class="type-c" title="class">c</sup>, <a href="#HeartBeat" title="https://w3id.org/def/SmartHealthCare#HeartBeat">HeartBeat</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/sanjutiwari#found_in" title="https://w3id.org/def/sanjutiwari#found_in">found_in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#has" title="https://w3id.org/def/SmartHealthCare#has">has</a>
@@ -1609,10 +1678,22 @@ This section provides details for each class and property defined by Smart Healt
          <a href="#cares_for" title="https://w3id.org/def/SmartHealthCare#cares_for">cares_for</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/sanjutiwari#found_in" title="https://w3id.org/def/sanjutiwari#found_in">found_in</a>
+      </li>
+      <li>
          <a href="#has" title="https://w3id.org/def/SmartHealthCare#has">has</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/sanjutiwari#has_manage" title="https://w3id.org/def/sanjutiwari#has_manage">has_manage</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/sanjutiwari#has_measured" title="https://w3id.org/def/sanjutiwari#has_measured">has_measured</a>
+      </li>
+      <li>
          <a href="#looks_for" title="https://w3id.org/def/SmartHealthCare#looks_for">looks_for</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/sanjutiwari#managed_by" title="https://w3id.org/def/sanjutiwari#managed_by">managed_by</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/sanjutiwari#measured_by" title="https://w3id.org/def/sanjutiwari#measured_by">measured_by</a>
@@ -1622,6 +1703,9 @@ This section provides details for each class and property defined by Smart Healt
       </li>
       <li>
          <a href="#operates_by" title="https://w3id.org/def/SmartHealthCare#operates_by">operates_by</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/sanjutiwari#recieved_data" title="https://w3id.org/def/sanjutiwari#recieved_data">received_data</a>
       </li>
       <li>
          <a href="#transfer_data_to"
@@ -1699,6 +1783,40 @@ This section provides details for each class and property defined by Smart Healt
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#found_in">
+      <h3>found_in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#found_in</p>
+      <div class="comment">
+         <span class="markdown">An Object Property for diagnosing the symptoms.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Sympotoms" title="https://w3id.org/def/SmartHealthCare#Sympotoms">Symptoms</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#has" title="https://w3id.org/def/SmartHealthCare#has">has</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="has">
       <h3>has<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1724,6 +1842,80 @@ This section provides details for each class and property defined by Smart Healt
             <dd>
                <a href="#Sympotoms" title="https://w3id.org/def/SmartHealthCare#Sympotoms">Symptoms</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#found_in" title="https://w3id.org/def/sanjutiwari#found_in">found_in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#has_manage">
+      <h3>has_manage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#has_manage</p>
+      <div class="comment">
+         <span class="markdown">An object property to manage organisation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization"
+                  title="https://w3id.org/def/SmartHealthCare#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#HealthCare" title="https://w3id.org/def/SmartHealthCare#HealthCare">HealthCare</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#managed_by" title="https://w3id.org/def/sanjutiwari#managed_by">managed_by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#has_measured">
+      <h3>has_measured<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#has_measured</p>
+      <div class="comment">
+         <span class="markdown">An object property to measure the diseases by sensor.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Sensores" title="https://w3id.org/def/SmartHealthCare#Sensores">Sensores</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#Diseases" title="https://w3id.org/def/sanjutiwari#Diseases">Diseases</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#measured_by" title="https://w3id.org/def/sanjutiwari#measured_by">measured_by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1754,6 +1946,46 @@ This section provides details for each class and property defined by Smart Healt
                <a href="#Patient" title="https://w3id.org/def/SmartHealthCare#Patient">Patient</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#treated_by" title="https://w3id.org/def/SmartHealthCare#treated_by">treated_by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#managed_by">
+      <h3>managed_by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#managed_by</p>
+      <div class="comment">
+         <span class="markdown">An object property to manage the Healthcare</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#HealthCare" title="https://w3id.org/def/SmartHealthCare#HealthCare">HealthCare</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organization"
+                  title="https://w3id.org/def/SmartHealthCare#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#has_manage" title="https://w3id.org/def/sanjutiwari#has_manage">has_manage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1782,6 +2014,11 @@ This section provides details for each class and property defined by Smart Healt
             <dd>
                <a href="#Sensores" title="https://w3id.org/def/SmartHealthCare#Sensores">Sensores</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#has_measured" title="https://w3id.org/def/sanjutiwari#has_measured">has_measured</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1854,6 +2091,42 @@ This section provides details for each class and property defined by Smart Healt
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/def/sanjutiwari#recieved_data">
+      <h3>received_data<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/sanjutiwari#recieved_data</p>
+      <div class="comment">
+         <span class="markdown">A Property to receive the data from HealthDevices.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://w3id.org/def/SmartHealthCare</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#HealthDevices"
+                  title="https://w3id.org/def/SmartHealthCare#HealthDevices">HealthDevices</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#transfer_data_to"
+                  title="https://w3id.org/def/SmartHealthCare#transfer_data_to">transfer_data_to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="transfer_data_to">
       <h3>transfer_data_to<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1880,6 +2153,11 @@ This section provides details for each class and property defined by Smart Healt
             <dd>
                <a href="#Actor" title="https://w3id.org/def/SmartHealthCare#Actor">Actor</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/sanjutiwari#recieved_data" title="https://w3id.org/def/sanjutiwari#recieved_data">received_data</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1909,6 +2187,11 @@ This section provides details for each class and property defined by Smart Healt
             <dd>
                <a href="#https://w3id.org/def/sanjutiwari#Doctor" title="https://w3id.org/def/sanjutiwari#Doctor">Doctor</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#looks_for" title="https://w3id.org/def/SmartHealthCare#looks_for">looks_for</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>

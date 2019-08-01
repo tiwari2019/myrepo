@@ -4,6 +4,7 @@
 <https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/description> "It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries." .
 <https://w3id.org/def/sanjutiwari> <http://purl.org/dc/elements/1.1/title> "Smart Health Care Ontology for Health Care" .
 <https://w3id.org/def/sanjutiwari> <http://purl.org/dc/terms/created> "04/12/2018" .
+<https://w3id.org/def/sanjutiwari> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <https://w3id.org/def/sanjutiwari> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
@@ -23,6 +24,9 @@
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/source
 <http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -31,6 +35,9 @@
 # 
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -60,6 +67,7 @@
 # 
 # https://w3id.org/def/SmartHealthCare#has
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/sanjutiwari#found_in> .
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
 <https://w3id.org/def/SmartHealthCare#has> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to contain." .
@@ -68,6 +76,7 @@
 # 
 # https://w3id.org/def/SmartHealthCare#looks_for
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/SmartHealthCare#treated_by> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/sanjutiwari#Doctor> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
 <https://w3id.org/def/SmartHealthCare#looks_for> <http://www.w3.org/2000/01/rdf-schema#comment> "Propert to look patients" .
@@ -93,6 +102,7 @@
 # 
 # https://w3id.org/def/SmartHealthCare#transfer_data_to
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/sanjutiwari#recieved_data> .
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Actor> .
 <https://w3id.org/def/SmartHealthCare#transfer_data_to> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to transfer data." .
@@ -107,6 +117,40 @@
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An Object Property." .
 <https://w3id.org/def/SmartHealthCare#treated_by> <http://www.w3.org/2000/01/rdf-schema#label> "treated_by" .
 # 
+# https://w3id.org/def/sanjutiwari#found_in
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Sympotoms> .
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Patient> .
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/2000/01/rdf-schema#comment> "An Object Property for diagnosing the symptoms." .
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An Object Property" .
+<https://w3id.org/def/sanjutiwari#found_in> <http://www.w3.org/2000/01/rdf-schema#label> "found_in" .
+# 
+# https://w3id.org/def/sanjutiwari#has_manage
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/sanjutiwari#managed_by> .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property to manage organisation." .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An object property" .
+<https://w3id.org/def/sanjutiwari#has_manage> <http://www.w3.org/2000/01/rdf-schema#label> "has_manage" .
+# 
+# https://w3id.org/def/sanjutiwari#has_measured
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/sanjutiwari#measured_by> .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Sensores> .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/sanjutiwari#Diseases> .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property to measure the diseases by sensor." .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An Object Property" .
+<https://w3id.org/def/sanjutiwari#has_measured> <http://www.w3.org/2000/01/rdf-schema#label> "has_measured" .
+# 
+# https://w3id.org/def/sanjutiwari#managed_by
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#HealthCare> .
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property to manage the Healthcare" .
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An object property." .
+<https://w3id.org/def/sanjutiwari#managed_by> <http://www.w3.org/2000/01/rdf-schema#label> "managed_by" .
+# 
 # https://w3id.org/def/sanjutiwari#measured_by
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/sanjutiwari#Diseases> .
@@ -114,6 +158,14 @@
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to measure." .
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An Object Property." .
 <https://w3id.org/def/sanjutiwari#measured_by> <http://www.w3.org/2000/01/rdf-schema#label> "measured_by" .
+# 
+# https://w3id.org/def/sanjutiwari#recieved_data
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/2000/01/rdf-schema#comment> "A Property to receive the data from HealthDevices." .
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "An Object Property for data receiving." .
+<https://w3id.org/def/sanjutiwari#recieved_data> <http://www.w3.org/2000/01/rdf-schema#label> "received_data" .
 # 
 # 
 # 
@@ -249,7 +301,9 @@
 # https://w3id.org/def/SmartHealthCare#HealthCare
 <https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
 <https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#comment> "A class for health care objects." .
+<https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "HealthCare is a main class to keep Health Information." .
 <https://w3id.org/def/SmartHealthCare#HealthCare> <http://www.w3.org/2000/01/rdf-schema#label> "HealthCare" .
 # 
 # https://w3id.org/def/SmartHealthCare#HealthDevices
@@ -261,7 +315,7 @@
 # 
 # https://w3id.org/def/SmartHealthCare#HealthProvider
 <https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
 <https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO." .
 <https://w3id.org/def/SmartHealthCare#HealthProvider> <http://www.w3.org/2000/01/rdf-schema#label> "HealthProvider" .
 # 
@@ -331,6 +385,7 @@
 # https://w3id.org/def/SmartHealthCare#Oncologist
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Physician> .
+<https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Doctor> .
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#comment> "A doctor who has special training in diagnosing and treating cancer in adults using chemotherapy, hormonal therapy, biological therapy, and targeted therapy." .
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Oncologist is a sub-class of Physician." .
 <https://w3id.org/def/SmartHealthCare#Oncologist> <http://www.w3.org/2000/01/rdf-schema#label> "Oncologist" .
@@ -352,11 +407,6 @@
 # https://w3id.org/def/SmartHealthCare#Patient
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Actor> .
-<https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#cared_by> .
-_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/sanjutiwari#Doctor> .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who needs treatment." .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Patient is a subclass of Actor." .
 <https://w3id.org/def/SmartHealthCare#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
@@ -462,11 +512,11 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/sanjutiwa
 # https://w3id.org/def/sanjutiwari#BloodPressure
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/sanjutiwari#Diseases> .
-<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
-_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
+<https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/sanjutiwari#measured_by> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHealthCare#BPSensores> .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a disease." .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "BloodPressure is a subclass of Disease." .
 <https://w3id.org/def/sanjutiwari#BloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "BloodPressure" .
@@ -495,10 +545,10 @@ _:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/SmartHeal
 # https://w3id.org/def/sanjutiwari#HeartPatient
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/SmartHealthCare#Patient> .
-<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#treated_by> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/SmartHealthCare#Cardiologist> .
+<https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/SmartHealthCare#treated_by> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/SmartHealthCare#Cardiologist> .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient suffering from heart diseases." .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "It is a subclass of Patient" .
 <https://w3id.org/def/sanjutiwari#HeartPatient> <http://www.w3.org/2000/01/rdf-schema#label> "HeartPatient" .
