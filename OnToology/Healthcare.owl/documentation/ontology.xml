@@ -14,6 +14,7 @@
         <dc:description>It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries.</dc:description>
         <dc:title>Smart Health Care Ontology for Health Care</dc:title>
         <terms:created>04/12/2018</terms:created>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -52,6 +53,13 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/source -->
 
 
@@ -70,6 +78,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -116,6 +131,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#has">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/sanjutiwari#found_in"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
         <rdfs:comment>Property to contain.</rdfs:comment>
@@ -129,6 +145,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#looks_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/SmartHealthCare#treated_by"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
         <rdfs:comment>Propert to look patients</rdfs:comment>
@@ -169,6 +186,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/SmartHealthCare#transfer_data_to">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/sanjutiwari#recieved_data"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
         <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>Property to transfer data.</rdfs:comment>
@@ -191,6 +209,60 @@
     
 
 
+    <!-- https://w3id.org/def/sanjutiwari#found_in -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#found_in">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Sympotoms"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Patient"/>
+        <rdfs:comment>An Object Property for diagnosing the symptoms.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property</rdfs:isDefinedBy>
+        <rdfs:label>found_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#has_manage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#has_manage">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/sanjutiwari#managed_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:comment>An object property to manage organisation.</rdfs:comment>
+        <rdfs:isDefinedBy>An object property</rdfs:isDefinedBy>
+        <rdfs:label>has_manage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#has_measured -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#has_measured">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/sanjutiwari#measured_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Sensores"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/sanjutiwari#Diseases"/>
+        <rdfs:comment>An object property to measure the diseases by sensor.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property</rdfs:isDefinedBy>
+        <rdfs:label>has_measured</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#managed_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#managed_by">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#HealthCare"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#Organization"/>
+        <rdfs:comment>An object property to manage the Healthcare</rdfs:comment>
+        <rdfs:isDefinedBy>An object property.</rdfs:isDefinedBy>
+        <rdfs:label>managed_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/sanjutiwari#measured_by -->
 
 
@@ -200,6 +272,19 @@
         <rdfs:comment>Property to measure.</rdfs:comment>
         <rdfs:isDefinedBy>An Object Property.</rdfs:isDefinedBy>
         <rdfs:label>measured_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/sanjutiwari#recieved_data -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/sanjutiwari#recieved_data">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
+        <rdfs:comment>A Property to receive the data from HealthDevices.</rdfs:comment>
+        <rdfs:isDefinedBy>An Object Property for data receiving.</rdfs:isDefinedBy>
+        <rdfs:label>received_data</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -434,7 +519,9 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthCare">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/SmartHealthCare#HealthDevices"/>
         <rdfs:comment>A class for health care objects.</rdfs:comment>
+        <rdfs:isDefinedBy>HealthCare is a main class to keep Health Information.</rdfs:isDefinedBy>
         <rdfs:label>HealthCare</rdfs:label>
     </owl:Class>
     
@@ -456,7 +543,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#HealthProvider">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
         <rdfs:comment>Person or business that provides health care services to consumers. Most health care providers are part of a network of some sort whether it is a HMO or PPO.</rdfs:comment>
         <rdfs:label>HealthProvider</rdfs:label>
     </owl:Class>
@@ -576,6 +663,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Oncologist">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Physician"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
         <rdfs:comment>A doctor who has special training in diagnosing and treating cancer in adults using chemotherapy, hormonal therapy, biological therapy, and targeted therapy.</rdfs:comment>
         <rdfs:isDefinedBy>Oncologist is a sub-class of Physician.</rdfs:isDefinedBy>
         <rdfs:label>Oncologist</rdfs:label>
@@ -612,13 +700,6 @@
 
     <owl:Class rdf:about="https://w3id.org/def/SmartHealthCare#Patient">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/SmartHealthCare#Actor"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/SmartHealthCare#cared_by"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/def/sanjutiwari#Doctor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A person who needs treatment.</rdfs:comment>
         <rdfs:isDefinedBy>Patient is a subclass of Actor.</rdfs:isDefinedBy>
         <rdfs:label>Patient</rdfs:label>
