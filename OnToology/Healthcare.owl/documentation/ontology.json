@@ -6,26 +6,13 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/SmartHealthCare#cared_by"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#BPSensores"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
@@ -46,6 +33,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -53,6 +43,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#Thing",
@@ -320,11 +313,17 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A class for health care objects."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "HealthCare is a main class to keep Health Information."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HealthCare"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices",
@@ -351,7 +350,7 @@
     "@value" : "HealthProvider"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#HeartBeat",
@@ -502,6 +501,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Physician"
+  }, {
+    "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Oncology_Pharmacist",
@@ -547,8 +548,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
-  }, {
-    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#Pharmacist",
@@ -816,6 +815,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#found_in"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
@@ -834,6 +836,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#treated_by"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#operates",
@@ -891,6 +896,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#recieved_data"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SmartHealthCare#treated_by",
@@ -928,6 +936,9 @@
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "04/12/2018"
   } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.1"
@@ -947,7 +958,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
   }, {
-    "@id" : "_:genid2"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Bon",
@@ -1012,7 +1023,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/sanjutiwari#Jack",
@@ -1075,6 +1086,84 @@
   "@id" : "https://w3id.org/def/sanjutiwari#Tove",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/sanjutiwari#LeverPatient" ]
 }, {
+  "@id" : "https://w3id.org/def/sanjutiwari#found_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Object Property for diagnosing the symptoms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sympotoms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "found_in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Patient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#has_manage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An object property to manage organisation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An object property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_manage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#managed_by"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#has_measured",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An object property to measure the diseases by sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_measured"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#Diseases"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/sanjutiwari#measured_by"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#managed_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An object property to manage the Healthcare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthCare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An object property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "managed_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Organization"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/sanjutiwari#measured_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1091,5 +1180,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/SmartHealthCare#Sensores"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/sanjutiwari#recieved_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Property to receive the data from HealthDevices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "An Object Property for data receiving."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "received_data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/SmartHealthCare#HealthDevices"
   } ]
 } ]

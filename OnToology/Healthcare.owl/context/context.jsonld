@@ -18,8 +18,15 @@
     "InsurancePolicy" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#InsurancePolicy"
     },
+    "has_manage" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#has_manage",
+      "@type" : "@id"
+    },
     "HeartBeat" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#HeartBeat"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
     },
     "Pulmonologist" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Pulmonologist"
@@ -61,6 +68,10 @@
     "Cardiologist" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Cardiologist"
     },
+    "managed_by" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#managed_by",
+      "@type" : "@id"
+    },
     "looks_for" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#looks_for",
       "@type" : "@id"
@@ -77,6 +88,10 @@
     },
     "transfer_data_to" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#transfer_data_to",
+      "@type" : "@id"
+    },
+    "recieved_data" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#recieved_data",
       "@type" : "@id"
     },
     "Event" : {
@@ -96,6 +111,10 @@
     },
     "Actor" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Actor"
+    },
+    "found_in" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#found_in",
+      "@type" : "@id"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -132,6 +151,10 @@
     },
     "HeartDisease" : {
       "@id" : "https://w3id.org/def/sanjutiwari#HeartDisease"
+    },
+    "has_measured" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#has_measured",
+      "@type" : "@id"
     },
     "Fever" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Fever"
