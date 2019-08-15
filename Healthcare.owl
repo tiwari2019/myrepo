@@ -14,7 +14,7 @@
         <dc:description>It is a smart semantic model to store the health care descriptions with their entities, properties and attributes. Knowledge can be infer by SWRL rules and SPARQL Queries.</dc:description>
         <dc:title>Smart Health Care Ontology for Health Care</dc:title>
         <terms:created>04/12/2018</terms:created>
-        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/> http://purl.org/NET/rdflicense/cc-by4.0
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/> 
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
     </owl:Ontology>
     
