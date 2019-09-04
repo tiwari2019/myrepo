@@ -171,6 +171,39 @@
 # 
 # #################################################################
 # #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/sanjutiwari#hasAddress
+<https://w3id.org/def/sanjutiwari#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/sanjutiwari#hasAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Organization> .
+<https://w3id.org/def/sanjutiwari#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/sanjutiwari#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "hasAddress" .
+# 
+# https://w3id.org/def/sanjutiwari#hasManufacture
+<https://w3id.org/def/sanjutiwari#hasManufacture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/sanjutiwari#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/sanjutiwari#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/def/sanjutiwari#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacture" .
+# 
+# https://w3id.org/def/sanjutiwari#hasModel
+<https://w3id.org/def/sanjutiwari#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/sanjutiwari#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#HealthDevices> .
+<https://w3id.org/def/sanjutiwari#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/def/sanjutiwari#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasModel" .
+# 
+# https://w3id.org/def/sanjutiwari#hasName
+<https://w3id.org/def/sanjutiwari#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/sanjutiwari#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/SmartHealthCare#Actor> .
+<https://w3id.org/def/sanjutiwari#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/sanjutiwari#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
