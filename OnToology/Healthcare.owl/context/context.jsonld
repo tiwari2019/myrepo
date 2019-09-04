@@ -22,6 +22,10 @@
       "@id" : "https://w3id.org/def/sanjutiwari#has_manage",
       "@type" : "@id"
     },
+    "hasModel" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#hasModel",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
     "HeartBeat" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#HeartBeat"
     },
@@ -50,6 +54,10 @@
     "TemperatureSensors" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#TemperatureSensors"
     },
+    "hasName" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Administrator" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Administrator"
     },
@@ -58,6 +66,10 @@
     },
     "Phychiatric_Pharmacist" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Phychiatric_Pharmacist"
+    },
+    "hasAddress" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#hasAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Doctor" : {
       "@id" : "https://w3id.org/def/sanjutiwari#Doctor"
@@ -202,6 +214,10 @@
     },
     "Hospital" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Hospital"
+    },
+    "hasManufacture" : {
+      "@id" : "https://w3id.org/def/sanjutiwari#hasManufacture",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Surgery" : {
       "@id" : "https://w3id.org/def/SmartHealthCare#Surgery"

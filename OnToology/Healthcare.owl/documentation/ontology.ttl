@@ -189,6 +189,38 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/sanjutiwari#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://w3id.org/def/SmartHealthCare#Organization> ;
+            rdfs:range xsd:string ;
+            rdfs:label "hasAddress" .
+
+
+###  https://w3id.org/def/sanjutiwari#hasManufacture
+:hasManufacture rdf:type owl:DatatypeProperty ;
+                rdfs:domain <https://w3id.org/def/SmartHealthCare#HealthDevices> ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "hasManufacture" .
+
+
+###  https://w3id.org/def/sanjutiwari#hasModel
+:hasModel rdf:type owl:DatatypeProperty ;
+          rdfs:domain <https://w3id.org/def/SmartHealthCare#HealthDevices> ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "hasModel" .
+
+
+###  https://w3id.org/def/sanjutiwari#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain <https://w3id.org/def/SmartHealthCare#Actor> ;
+         rdfs:range xsd:string ;
+         rdfs:label "hasName" .
+
+
+#################################################################
 #    Classes
 #################################################################
 
